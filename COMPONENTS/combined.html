@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>F1 Dashboard</h2>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+                <li><a href="#" onclick="showSection('live-timings')">Live Timings</a></li>
+                <li><a href="#" onclick="showSection('race-schedule')">Race Schedule</a></li>
+                <li><a href="#" onclick="showSection('driver-standings')">Driver Standings</a></li>
+                <li><a href="#" onclick="showSection('team-drivers')">Team Drivers</a></li>
+                <li><a href="#" onclick="showSection('fan-engagement')">Fan Engagement</a></li>
+                <li><a href="#" onclick="showSection('weather')">Weather Management</a></li>
+                <li><a href="#" onclick="showSection('safety-management')">Safety Management</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="dashboard" class="section"> 
+        <h1>Dashboard</h1>
+    
+        <!-- News Section -->
+        <div id="news-section">
+            <h2>Latest News</h2>
+            <ul id="LATEST FROM F1"></ul>
+        </div>
+        
+        <!-- Top 3 Drivers Section -->
+        <div id="top-drivers">
+            <h2>Top 3 Drivers in Latest Grand Prix</h2>
+            <table>
+                <tr>
+                    <th>Position</th>
+                    <th>Driver</th>
+                    <th>Constructor</th>
+                    <th>Time</th>
+                </tr>
+            </table>
+            <ul id="driver-standings-list"></ul>
+        </div>
+    </div>
+    <div id="live-timings" class="section"> <!-- Live Timings Section Here --></div>
+    <div id="race-schedule" class="section"> 
+        <h1>Race Schedule</h1>
+    <label for="schedule-year">Select Year:</label>
+    <select id="schedule-year" onchange="fetchRaceSchedule()">
+        <option value="2024" selected>2024</option>
+        <option value="2025">2025</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <!-- Add more years as needed -->
+    </select>
+    <div id="schedule-data"></div>
+    </div>
+    <div id="driver-standings" class="section">
+        <h1>Driver Standings</h1>
+    <label for="standings-year">Select Year:</label>
+    <select id="standings-year" onchange="fetchDriverStandings()">
+        <option value="2024" selected>2024</option>
+        <option value="2023">2023</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <!-- Add more years as needed -->
+    </select>
+    <div id="standings-data"></div>
+    </div>
+    <div id="team-drivers" class="section"> <!-- Team Drivers Section Here --></div>
+    <div id="weather" class="section"> 
+        <h1>Weather Management</h1>
+    <label for="track-select">Select Track Location:</label>
+    <select id="track-select" onchange="fetchWeatherData()">
+        <option value="Monza">Monza, Italy</option>
+        <option value="Silverstone">Silverstone, UK</option>
+        <option value="Suzuka">Suzuka, Japan</option>
+        <option value="Austin">Austin, USA</option>
+        <option value="Melbourne">Melbourne, Australia</option>
+        <option value="Spa">Spa, Belgium</option>
+        <option value="Shanghai">Shanghai, China</option>
+        <option value="Sao Paulo">Sao Paulo, Brazil</option>
+        <option value="Miami">Miami, USA</option>
+        <option value="Barcelona">Barcelona, Spain</option>
+        <option value="Baku">Baku, Azerbaijan</option>
+        <option value="Singapore">Singapore, Singapore</option>
+        <option value="Mexico">Mexico, Mexico</option>
+        <option value="Monaco">Monaco, Monaco</option>
+        <option value="Montreal">Montreal, Canada</option>
+        <option value="Zandvoort">Zandvoort, Netherlands</option>
+        <option value="Spielberg">Spielberg, Austria</option>
+        <option value="Budapest">Budapest, Hungary</option>
+        <option value="Sakhir">Sakhir, Bahrain</option>
+        <option value="Jeddah">Jeddah, Saudi Arabia</option>
+        <option value="Lusail">Lusail, Qatar</option>
+        <option value="Imola">Imola, Emilia Romagna</option>
+        <option value="Yas Island">Yas Island, Abu Dhabi</option>
+        <!-- Add more tracks as needed -->
+    </select>
+    <div id="weather-info"></div>
+
+    </div>
+    <div id="safety-management" class="section"> <!-- Safety Management Section Here --></div>
+    <div id="fan-engagement" class="section"> 
+        <h1>Fan Engagement</h1>
+    <!-- Authentication Forms -->
+    <div id="auth-section" class="auth-form">
+        <h2>Log In or Sign Up to Participate</h2>
+
+        <!-- Sign-Up Form -->
+        <div id="sign-up-form" class="auth-form-section">
+            <h3>Sign Up</h3>
+            <input type="text" id="sign-up-username" placeholder="Username" required>
+            <input type="password" id="sign-up-password" placeholder="Password" required>
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+
+        <!-- Log-In Form -->
+        <div id="log-in-form" class="auth-form-section">
+            <h3>Log In</h3>
+            <input type="text" id="log-in-username" placeholder="Username" required>
+            <input type="password" id="log-in-password" placeholder="Password" required>
+            <button onclick="logIn()">Log In</button>
+        </div>
+    </div>
+
+    <!-- Logged-In Content: Only visible after log-in -->
+    <div id="engagement-content" style="display: none;">
+        <button id="log-out-btn" onclick="logOut()">Log Out</button>
+        <textarea id="post-input" placeholder="Share your thoughts..."></textarea>
+        <button id="post-btn">Post</button>
+        <div id="posts-container">
+            <!-- Posts will be added here -->
+        </div>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
