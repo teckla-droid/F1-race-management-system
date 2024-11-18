@@ -9,6 +9,19 @@
         "select-name": "off"
       }
     ],
-    "no-inline-styles": "off"
-  }
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "css-prefix-order": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 18",
+    "not safari <= 18"
+  ]
 }

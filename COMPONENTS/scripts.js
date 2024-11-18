@@ -267,63 +267,6 @@ async function fetchWeatherData() {
 }
 
 // Fan Engagement Section - Allows Users to Post, Like, and Comment
-// Redirect user based on authentication status
-function initFanEngagementAccess() {
-    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-    if (!isLoggedIn) {
-        // If not logged in, redirect to login page
-        window.location.href = 'login.html';
-    } else {
-        // If logged in, display the fan engagement section
-        document.getElementById('fan-engagement').style.display = 'block';
-    }
-}
-
-// Sign-Up Function
-function signUp() {
-    const username = document.getElementById('sign-up-username').value.trim();
-    const password = document.getElementById('sign-up-password').value.trim();
-
-    if (username && password) {
-        // Store user data in localStorage
-        localStorage.setItem('username', username);
-        localStorage.setItem('password', password);
-        alert('Sign-Up successful! Please log in.');
-    } else {
-        alert('Please enter a valid username and password.');
-    }
-}
-
-// Log-In Function
-function logIn() {
-    const username = document.getElementById('log-in-username').value.trim();
-    const password = document.getElementById('log-in-password').value.trim();
-
-    // Retrieve stored credentials from localStorage
-    const storedUsername = localStorage.getItem('username');
-    const storedPassword = localStorage.getItem('password');
-
-    if (username === storedUsername && password === storedPassword) {
-        // Log the user in
-        localStorage.setItem('isLoggedIn', 'true');
-        alert('Log-In successful!');
-        // Redirect back to Fan Engagement page after log-in
-        window.location.href = 'index.html#fan-engagement'; // Replace 'index.html' with your main file's name
-    } else {
-        alert('Invalid username or password.');
-    }
-}
-
-// Log-Out Function (optional)
-function logOut() {
-    localStorage.removeItem('isLoggedIn');
-    alert('You have been logged out.');
-    window.location.href = 'index.html'; // Redirect to main page after logging out
-}
-
-// Initialize Fan Engagement Access on Page Load
-document.addEventListener('DOMContentLoaded', initFanEngagementAccess);
-
 // Check if the user is already logged in when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     checkAuthStatus();
@@ -400,7 +343,6 @@ function createPost() {
         alert("Your post cannot be empty.");
     }
 }
-
 function initFanEngagement() {
     const postBtn = document.getElementById('post-btn');
     const postInput = document.getElementById('post-input');

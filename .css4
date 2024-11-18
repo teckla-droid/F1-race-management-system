@@ -7,18 +7,16 @@
     --black-color: #15151e;
     --gray-color: #a8a8a8;
     --white-color: #ffffff;
-    --main-color: #e10600;
+    --primary-color: #e10600;
 }
 
 /* Smooth scroll */
 html {
     scroll-behavior: smooth;
 }
-
 :target {
     scroll-margin-top: 6rem;
 }
-
 /* General */
 * {
     margin: 0;
@@ -32,7 +30,6 @@ body {
 }
 
 /* Scrollbar */
-
 body::-webkit-scrollbar,
 .scroll-x::-webkit-scrollbar {
     width: 7px;
@@ -53,7 +50,6 @@ body::-webkit-scrollbar-thumb,
 }
 
 /* Header */
-
 header {
     background-color: var(--black-color);
     display: grid;
@@ -99,9 +95,8 @@ header .nav li a {
 }
 
 header .nav li a:hover {
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
 }
-
 /* Carousel */
 
 main .carousel {
@@ -127,7 +122,7 @@ main .carousel {
     object-fit: cover;
 }
 
-.btnPrevious, .btnNext {
+.previousButton, .nextButton {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -141,35 +136,35 @@ main .carousel {
     user-select: none;
 }
 
-.btnPrevious {
+.previousButton {
     left: 0;
     border-radius: 0 3px 3px 0;
 }
 
-.btnNext {
+.nextButton {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.btnPrevious:hover, .btnNext:hover {
+.previousButton:hover, .nextButton:hover {
     background-color: rgba(0, 0, 0, .8);
 }
 
-.circles-container {
+.indicator-container {
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.circles-container div {
+.indicator-container div {
     background-color: var(--black-color);
     margin: 2px;
     padding: 10px;
     border-radius: 5px;
 }
 
-.circle {
+.indicator {
     cursor: pointer;
     width: 15px;
     height: 15px;
@@ -180,15 +175,15 @@ main .carousel {
     transition: background-color .4s ease;
 }
 
-.active, .circle:hover {
-    background-color: var(--main-color);
+.active, .indicator:hover {
+    background-color: var(--primary-color);
 }
 
 .animation {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
 }
 
 @keyframes fade {
@@ -200,8 +195,7 @@ main .carousel {
     from {opacity: .4} 
     to {opacity: 1}
 }
-
-/* History */
+/* History Section */
 
 .history {
     margin: auto 135px 40px;
@@ -218,7 +212,7 @@ main .carousel {
     margin-top: 10px;
 }
 
-/* Indicators */
+  /* Indicators */
 
 #info {
     height: 100%;
@@ -228,7 +222,7 @@ main .carousel {
     justify-content: space-around;
     align-items: center;
 }
-
+/* General configuration for info items */
 .info-item {
     display: flex;
     padding: 20px;
@@ -240,14 +234,14 @@ main .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px solid var(--main-color);
+    border: 10px solid var(--primary-color);
     color: var(--white-color);
     border-radius: 50%;
     height: 150px;
     width: 150px;
     font-weight: bold;
     font-size: 45px;
-    margin: 10px; 
+    margin: 10px;
 }
 
 .info-item .info-description {
@@ -257,11 +251,10 @@ main .carousel {
     text-align: center;
 }
 
-/* Titles for tracks, drivers, and teams */
-
-#tracks .title,
-#drivers .title,
-#teams .title {
+  /* Titles for Tracks, Drivers, and Teams */
+    #tracks .title,
+    #drivers .title,
+    #teams .title {
     font-size: 50px;
     margin: 40px 0 0 75px;
     display: flex;
@@ -271,10 +264,8 @@ main .carousel {
 
 .title .img-icon {
     height: 70px;
-} 
-
-/* Flip effect on cards */
-
+}
+  /* Flip effect for cards */
 .card-container {
     display: inline-block;
     margin: 0 15px 0 15px;
@@ -308,8 +299,7 @@ main .carousel {
     transform: rotateY(180deg);
 }
 
-/* General cards */
-
+  /* General configuration for scrolling sections */
 .scroll-x {
     overflow-x: auto;
     overflow-y: hidden;
@@ -317,6 +307,7 @@ main .carousel {
     margin: 5px;
 }
 
+  /* General card configuration */
 .content {
     position: relative;
 }
@@ -358,25 +349,21 @@ main .carousel {
     border-radius: 0 3px 3px 0;
 }
 
-#tracks, #drivers, #teams {
+#tracks, #teams {
     white-space: nowrap;
 }
 
-/* General track card */
-
+  /* Configuration for track cards */
 #tracks .card-container {
     width: 376px;
     height: 285px;
 }
-
 #tracks .card-front-content,
 #tracks .card-back-content {
     padding: 25px;
-    white-space: normal;
-}
-
-/* Front of track card */
-
+    white-space: normal;}
+    
+  /* Front of track cards */
 #tracks .card-front-header {
     display: flex;
     align-items: center;
@@ -400,303 +387,84 @@ main .carousel {
 
 #tracks .card-front-header label {
     font-weight: bold;
-    color: var(--white -color);
+    color: var(--white-color);
     font-size: 25px;
     text-transform: uppercase;
 }
-
 #tracks .card-front-body {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+#tracks .card-front-body span {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    color: var(--black-color);
+}
+#tracks .card-front-body span.text {
+    margin-top: 5px;
+}
+
+#tracks .card-footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-#tracks .card-front-body img {
-    object-fit: contain;
-    max-height: 190px;
-    max-width: 100%;
+#tracks .card-footer .btn-left,
+#tracks .card-footer .btn-right {
+    font-size: 25px;
 }
 
-/* Back of track card */
-
+  /* Back of track cards */
 #tracks .card-back-header h3 {
     text-align: center;
     font-size: 18px;
     margin: 0;
 }
 
-.first-gp {
-    grid-area: first-gp;
+.primeiro-gp {
+    grid-area: primeiro-gp;
 }
 
-.circuit-comp {
-    grid-area: circuit-comp;
+.comp-circuito {
+    grid-area: comp-circuito;
 }
 
-.num-laps {
-    grid-area: num-laps;
+.num-voltas {
+    grid-area: num-voltas;
 }
 
-.race-distance {
-    grid-area: race-distance;
+.dist-corrida {
+    grid-area: dist-corrida;
 }
 
-.record-lap {
-    grid-area: record-lap;
+.volta-record {
+    grid-area: volta-record;
 }
 
-#tracks .card-back-body {
-    display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-areas: 
-    "first-gp num-laps"
-    "circuit-comp race-distance"
-    "record-lap record-lap";
-}
-
-#tracks .card-back-body div {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 2px solid var(--black-color);
-    border-right: 1px solid var(--black-color);
-    border-bottom-right-radius: 10px;
-    margin: 2px;
-    padding: 2px;
-}
-
-#tracks .card-back-body div p {
-    padding: 4px 0;
-    font-size: 16px;
-}
-
-#tracks .card-back-body div label {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* General driver card */
-
-#drivers .card-container {
-    width: 256px;
-    height: 390px;
-}
-
-#drivers .card-front-content {
-    padding: 0px;
-    height: 100%;
-}
-
-#drivers .card-back-content {
-    padding: 25px;
-}
-
-/* Front of driver card */
-
-#drivers .card-front-header {
-    text-align: center;
-}
-
-#drivers .card-front-header img {
-    width: 100%;
-    height: 100%;
-}
-
-#drivers .card-front-body {
-    padding: 5px 25px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 10px;
-    color: var(--white-color);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: var(--black-color);
-}
-
-#drivers .card-front-body h2 {
-    display: flex;
-    flex-direction: column;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-#drivers .card-front-body h2 span {
-    font-weight: bold;
-}
-
-#drivers .card-front-body h1 {
-    font-size: 70px;
-    margin: 0 5px;
-}
-
-/* Back of driver card */
-
-#drivers .card-back-header h3 {
-    margin: 0;
-    text-align: center;
-    font-size: 18px;
-}
-
-#drivers .card-back-body {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-#drivers .card-back-body div {
-    border-bottom: 2px solid var(--black-color);
-    border-right: 1px solid var(--black-color);
-    border-bottom-right-radius: 10px;
-    padding: 2px;
-}
-
-#drivers .card-back-body div p {
-    padding: 3px 0;
-    font-size: 16px;
-}
-
-#drivers .card-back-body div label {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* General team card */
-
+  /* Team cards */
 #teams .card-container {
     width: 550px;
     height: 285px;
 }
 
-#teams .card-front-content,
-#teams .card-back-content {
-    padding: 25px;
-    height: 100%;
-}
-
-/* Front of team card */
-
-#teams .card-front-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#teams .card-front-header img {
-    height: 80px;
-    width: 100px;
-}
-
-#teams .card-front-header div {
-    margin: 0 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, var(--gray-color) 0%, var(--black-color) 100%);
-    width: 100%;
-    height: 56px;
-}
-
-#teams .card-front-header label {
-    font-weight: bold;
-    color: var(--white-color);
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-#teams .card-front-body {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#teams .card-front-body img {
-    object-fit: contain;
-    max-height: 190px;
-    max-width: 100%;
-}
-
-/* Back of team card */
-
-#teams .card-back-header h3 {
-    text-align: center;
-    font-size: 18px;
-    margin: 0;
-}
-
-.team-leader {
-    grid-area: team-leader;
-}
-
-.entry-year {
-    grid-area: entry-year;
-}
-
-.team-titles {
-    grid-area: team-titles;
-}
-
-.engine {
-    grid-area: engine;
-}
-
-.primary-driver {
-    grid-area: primary-driver;
-}
-
-.secondary-driver {
-    grid-area: secondary-driver;
-}
-
-.base {
-    grid-area: base;
-}
-
-#teams .card-back-body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "team-leader entry-year team-titles"
-    "engine primary-driver secondary-driver"
-    "base base base";
-}
-
-#teams .card-back-body div {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 2px solid var(--black-color);
-    border-right: 1px solid var(--black-color);
-    border-bottom-right-radius: 10px;
-    margin: 2px;
-    padding: 2px;
-}
-
-#teams .card-back-body div p {
-    padding: 4px 0;
-    font-size: 16px;
-}
-
-#teams .card-back-body div label {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Footer */
-
+  /* Footer */
 footer {
+    background-color: var(--ivory-color);
+    color: var(--black-color);
+    height: 350px;
     margin: 0;
+    display: flex;
 }
 
-/* Registration Form */
+  /* Registration Form */
 
-#registration {
-    padding: 500px;
-    max-width: 10%;
+#register {
+    padding: 50px;
+    max-width: 50%;
     margin: 0 auto;
 }
 
-#registration p {
+#register p {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -740,382 +508,29 @@ footer {
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    border: 2px solid var(--main-color);
+    border: 2px solid var(--primary-color);
     border-radius: 5px;
     color: var(--white-color);
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
     transition: .3s;
 }
 
 .formLine #btnForm:hover {
-    background-color: var(--red-color);
-    color: var(--main-color);
+    background-color: var(--white-color);
+    color: var(--primary-color);
 }
 
-/* Creator and social networks */
-
-#credits {
+footer .footer-content {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--black-color);
-    padding: 40px 135px;
-    gap: 10px;
+    padding: 50px;
 }
-
-#credits #creator {
-    display: flex;
-    flex-direction: column;
-}
-
-#creator label {
+footer .footer-content div {
     color: var(--white-color);
-    font-size: 18px;
-    padding: 3px;
 }
 
-#contact label {
-    font-size: 35px;
-}
-
-#contact label a {
-    color: var(--white-color);
-    text-decoration: none;
-    padding: 0 5px;
-    border-radius: 5px;
-    transition: .3s;
-}
-
-
-/* Responsiveness */
-
-@media (max-width: 1200px) {
-
-.history {
-    margin: auto 100px 30px;
-}
-
-#registration {
-    max-width: 70%;
-}
-
-#credits {
-    padding: 40px 100px;
-}
-
-}
-
-@media (max-width: 992px) {
-
-.history {
-    margin: auto 80px  20px;
-}
-
-.history h2 {
-    margin: 5px auto;
-    font-size: 50px;
-}
-
-.history p {
-    font-size: 18px;
-}
-
-#tracks .title,
-#drivers .title,
-#teams .title {
-    font-size: 45px;
-    margin: 40px 0 0 70px;
-}
-
-.title .img-icon {
-    height: 60px;
-} 
-
-.scroll-x {
-    padding: 25px 15px;
-}
-
-.content > a {
-    margin: 20px 0;
-    font-size: 23px;
-}
-
-.card-container {
-    margin: 0 10px 0 10px;
-}
-
-#registration {
-    padding: 45px;
-    max-width: 80%;
-}
-
-#credits {
-    padding: 40px 80px;
-}
-
-}
-
-@media (max-width: 768px) {
-
-.history {
-    margin: auto 50px 15px;
-}
-
-.history h2 {
-    margin: 5px auto;
-}
-
-.history p {
-    font-size: 17px;
-}
-
-#tracks .title,
-#drivers .title,
-#teams .title {
-    margin: 30px 0 0 55px;
-}
-
-.scroll-x {
-    padding: 20px 5px;
-}
-
-.content > a {
-    margin: 15px 0;
-    font-size: 20px;
-}
-
-.card-container {
-    margin: 0 10px 0 10px;
-}
-
-#registration {
-    padding: 35px;
-    max-width: 85%;
-}
-
-#credits {
-    padding: 30px 50px;
-}
-
-}
-
-@media (max-width: 576px) {
-
-  /* Responsive menu */
-
-header .nav {
-    display: none;
-    grid-area: nav;
-}
-
-header .logo {
-    height: 25px;
-    grid-area: logo;
-}
-
-header .btn-area {
-    display: block;
-    text-align: right;
-    grid-area: btn;
-}
-
-header {
-    padding: 12px 22px;
-    grid-template-areas: 
-    "logo btn"
-		"nav nav";
-}
-
-.btn-area.menu-open ~ .nav  {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-header .nav li a {
-    font-size: 16px;
-    padding: 8px;
-}
-
-  /* General responsiveness */
-
-.history {
-    margin: auto 15px 20px;
-}
-
-.history h2 {
-    font-size: 35px;
-    margin: 5px auto;
-}
-
-.history p {
-    font-size: 16px;
-}
-
-#tracks .title,
-#drivers .title,
-#teams .title {
-    font-size: 35px;
-    margin: 20px 0 0 35px;
-}
-
-.title .img-icon {
-    height: 45px;
-} 
-
-.scroll-x {
-    padding: 10px 0px;
-}
-
-.content:hover > a {
-    display: none;
-}
-
-  /* Responsiveness of track cards */
-
-.card-container {
-    margin: 0 3px 0 3px;
-}
-
-#tracks .card-container {
-    width: 318px;
-    height: 250px;
-}
-
-#tracks .card-front-content,
-#tracks .card-back-content {
-    padding: 15px 10px;
-}
-
-#tracks .card-front-header img {
-    height: 50px;
-    width: 80px;
-}
-
-#tracks .card-front-header div {
-    height: 50px;
-}
-
-#tracks .card-front-header label {
-    font-size: 23px;
-}
-
-#tracks .card-front-body img {
-    max-height: 170px;
-}
-
-#tracks .card-back-header h3 {
-    font-size: 17px;
-}
-
-#tracks .card-back-body div p {
-    font-size: 15px;
-}
-
-#tracks .card-back-body div label {
-    font-size: 16px;
-}
-
-  /* Responsiveness of driver cards */
-
-#drivers .card-container {
-    width: 245px;
-    height: 347px;
-}
-
-#drivers .card-front-header 
-img {
-    width: 90%;
-    height: 90%;
-}
-
-#drivers .card-front-body h1 {
-    font-size: 65px;
-}
-
-#drivers .card-front-body h2 {
-    font-size: 18px;
-}
-
-#drivers .card-back-header h3 {
-    font-size: 17px;
-}
-
-#drivers .card-back-content {
-    padding: 15px;
-}
-
-#drivers .card-back-body div p {
-    padding: 0;
-}
-
-#drivers .card-back-body div label {
-    font-size: 17px;
-}
-
-  /* Responsiveness of team cards */
-
-#teams .card-container {
-    width: 350px;
-    height: 295px;
-}
-
-#teams .card-front-content, #teams .card-back-content {
-    padding: 15px;
-}
-
-#teams .card-front-body {
-    height: 60%;
-}
-
-#teams .card-back-body {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "team-leader entry-year"
-    "team-titles engine"
-    "primary-driver secondary-driver"
-    "base base";
-}
-
-#teams .card-back-header h3 {
-    font-size: 17px;
-}
-
-#teams .card-back-body div p {
-    padding: 0;
-}
-
-#teams .card-back-body div label {
-    font-size: 17px;
-}
-
-#registration {
-    padding: 20px;
-    max-width: 100%;
-}
 
-#registration p {
-    font-size: 17px;
-}
-
-.formLine label {
-    font-size: 16px;
-}
-
-.formLine #btnForm {
-    width: 100%;
-    font-size: 16px;
-}
-
-#credits {
-    padding: 30px 10px;
-}
-
-#creator label {
-    font-size: 15px;
-}
-}
 /* Table Styles */
 table {
     width: 100%;
@@ -1136,77 +551,35 @@ th {
 }
 
 td {
-    background-color: #efefefb9; 
+    background-color: #333333; /* Slightly darker for table rows */
 }
 
 tr:hover {
-    background-color: #444444; 
+    background-color: #444444; /* Dark hover effect */
 }
-
 /* Weather Card */
 .weather-card {
-    background-color: #c5c5cd; 
+    background-color: #2C2C3A; /* Dark grey for the card */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     margin: 0 auto;
-    width: 80%; 
+    width: 80%; /* Center the card */
 }
 
 /* Additional styling for better structure */
 h2, h3 {
-    color: #E10600; 
+    color: #E10600; /* F1 Red */
 }
 /* Fan Engagement Container */
 #fan-engagement {
-    header {
-        background-color: var(--black-color);
-        display: grid;
-        grid-template-columns: 200px 1fr;
-        position: sticky;
-        top: 0;
-        z-index: 99;
-        padding: 12px;
-    }
-    
-    header .logo {
-        height: 50px;
-    }
-    
-    header .btn-area {
-        display: none;
-    }
-    
-    header .btn-menu {
-        color: var(--white-color);
-        font-size: 25px;
-        display: inline-block;
-    }
-    
-    header .nav {
-        list-style-type: none;
-        flex-wrap: wrap;
-        display: flex;
-    }
-    
-    header .nav li {
-        margin: 10px;
-    }
-    
-    header .nav li a {
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 10px;
-        color: var(--white-color);
-        font-size: 20px;
-        transition: 0.3s;
-    }
-    
-    header .nav li a:hover {
-        background-color: var(--main-color);
-    }
+    background-color: #2C2C3A; /* Dark grey to match sidebar and other sections */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    margin: 20px auto;
 }
 
 /* Text area and Post Button styling */
@@ -1216,7 +589,7 @@ h2, h3 {
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #555555; /* Darker border */
-    background-color: #a0a0a7; /* Match background */
+    background-color: #1D1D1F; /* Match background */
     color: #FFFFFF;
     font-size: 1rem;
     resize: none;
@@ -1345,10 +718,44 @@ h2, h3 {
 #weather-info {
     margin-top: 20px;
 }
+#news-section, #top-drivers {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #27272a; /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(91, 87, 87, 0.5);
+}
+
+#news-section h2, #top-drivers h2 {
+    color: #f9f9f9; /* F1 Red */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#news-list, #driver-standings-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#news-list li, #driver-standings-list li {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#news-list li a {
+    text-decoration: none;
+    color: #ffffff; /* F1 Red */
+}
+
+#news-list li a:hover {
+    text-decoration: underline;
+}
 /* General style for the dropdown container */
 .section label {
     font-size: 18px;
-    color: #be1b1b; 
+    color: #E10600; /* F1 Red */
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -1482,7 +889,7 @@ h2, h3 {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #C0C0C0;
-    background-color: #bfbfc7;
+    background-color: #1D1D1F;
     color: #FFFFFF;
 }
 
