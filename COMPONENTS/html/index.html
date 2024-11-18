@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULA 1</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../../assets/f1_logo.svg" type="image/x-icon" />
+    <script>
+        src="https://kit.fontawesome.com/2a358d9687.js"
+        crossorigin="anonymous"
+    </script>
+    <script type="text/javascript" src="../js/data.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#">
+                <img class="logo" src="../../assets/f1_logo.svg" alt="Logo da Fórmula 1" />
+            </a>
+        </div>
+        <div class="btn-area">
+            <i class="btn-menu fas fa-bars"></i>
+        </div>
+        <ul class="nav">
+            <li><a href="#tracks">Tracks</a></li>
+            <li><a href="#drivers">Drivers</a></li>
+            <li><a href="#teams">Teams</a></li>
+            <li><a href="../html/weathermanagement.html">Weather</a></li>
+            <li><a href="../html/fansection.html">Fan Site</a></li>
+            <li><a href="../html/raceschedule.html">Race Schedule</a></li>
+            <li><a href="../html/livetimings.html">Live Timings</a></li>
+            <li><a href="../html/driverstandings.html">Driver Standings</a></li>
+            <li><a href="../html/safetymanagement.html">Safety Management</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="carousel">
+            <div class="carousel-container">
+            <div class="carousel-item animation visible">
+                <img
+                    src="../../assets/carousel/img01-min.jpg"
+                    alt="Carousel image 1"
+                />
+            </div>
+            <div class="carousel-item animation">
+                <img
+                    src="../../assets/carousel/img02-min.jpg"
+                    alt="Carousel image 2"
+                />
+            </div>
+    
+            <div class="carousel-item animation">
+                <img
+                    src="../../assets/carousel/img03-min.jpg"
+                    alt="Carousel image 3"
+                />
+            </div>
+    
+            <div class="carousel-item animation">
+                <img
+                    src="../../assets/carousel/img04-min.jpg"
+                    alt="Carousel image 4"
+                />
+            </div>
+    
+            <div class="carousel-item animation">
+                <img
+                    src="../../assets/carousel/img05-min.jpg"
+                    alt="Carousel image 5"
+                />
+            <a class="btnPrevious" onclick="changeImage(-1)">&#10094;</a>
+            <a class="btnNext" onclick="changeImage(1)">&#10095;</a>
+            </div>
+            <div class="circles-container">
+                <div>
+                    <span class="circle active" data-circle="0"></span>
+                </div>
+                <div>
+                    <span class="circle" data-circle="1"></span>
+                </div>
+                <div>
+                    <span class="circle" data-circle="2"></span>
+                </div>
+                <div>
+                    <span class="circle" data-circle="3"></span>
+                </div>
+                <div>
+                    <span class="circle" data-circle="4"></span>
+                </div>
+            </div>
+            </div>
+            <div class="history">
+                <h2>History</h2>
+                <p>
+                Formula 1 is a high-technology motorsport (car racing) that hosts an annual world championship, very popular since 1950. This championship originated from the Grand Prix competition, which took place in Europe before World War II. Formula 1 (F1) is regulated by the Fédération Internationale de l'Automobile (FIA), headquartered in Paris.
+                </p>
+                <p>
+                Great race car drivers are part of Formula 1's history. Among them are Ayrton Senna, Michael Schumacher, Alain Prost, Nelson Piquet, Juan Manuel Fangio, Niki Lauda, Rubens Barrichello, Lewis Hamilton, and many other renowned champions over the years.
+                </p>
+                <p>
+                Currently, each race is called the Formula 1 Grand Prix, followed by the name of the country where it takes place. The races happen on racetracks and some street circuits in Europe, Asia, Oceania, and the Americas. The most famous street circuit is the Monaco Grand Prix in Monte Carlo. The scoring system, which has changed over the years, now rewards up to the 10th place in each grand prix. The results of each race are converted into points that, when added, define two champions each year: drivers and constructors.
+                </p>
+            </div>
+            <div id="info">
+                <div class="info-item">
+                <div class="info-data">--</div>
+                <label class="info-description">Total tracks</label>
+            </div>
+            <div class="info-item">
+                <div class="info-data">--</div>
+                <label class="info-description">Total drivers</label>
+            </div>
+            <div class="info-item">
+                <div class="info-data">--</div>
+                <label class="info-description">Total teams</label>
+            </div>
+        </div>
+        <div id="tracks">
+            <h2 class="title">
+                Tracks <img class="img-icon" src="../../assets/icons/flag.png" />
+            </h2>
+            <div class="content">
+                <a class="btn-left">&#10094;</a>
+                <div id="trackList" class="scroll-x"></div>
+                <a class="btn-right">&#10095;</a>
+            </div>
+        </div>
+        <div id="drivers" class="drivers">
+            <h2 class="title">
+                Drivers <img class="img-icon" src="../../assets/icons/helmet.png" />
+            </h2>
+            <div class="content">
+                <a class="btn-left">&#10094;</a>
+                <div id="driverList" class="scroll-x"></div>
+                <a class="btn-right">&#10095;</a>
+            </div>
+
+        </div>
+
+        <div id="teams" class="teams">
+            <h2 class="title">
+                Teams <img class="img-icon" src="../../assets/icons/teams.png" />
+            </h2>
+            <div class="content">
+                <a class="btn-left">&#10094;</a>
+                <div id="teamList" class="scroll-x"></div>
+                <a class="btn-right">&#10095;</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/scripts.js"></script>
+    <footer>
+        <div id="credits">
+            <span id="creator">
+            <label>Copyright &copy; 2024</label>
+            <label>Developed by Teckla Ndanu</label>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

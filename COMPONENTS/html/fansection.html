@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Site</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../../assets/f1_logo.svg" type="image/x-icon" />
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script type="text/javascript" src="../js/fansection.js"></script>
+
+    <div id="fan-engagement" class="section"> 
+        <h1>Fan Site</h1>
+    <!-- Authentication Forms -->
+    <div id="auth-section" class="auth-form">
+        <h2>Log In or Sign Up to Participate</h2>
+
+        <!-- Sign-Up Form -->
+        <div id="sign-up-form" class="auth-form-section">
+            <input type="text" id="sign-up-username" placeholder="Username" required>
+            <input type="password" id="sign-up-password" placeholder="Password" required>
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+
+        <!-- Log-In Form -->
+        <div id="log-in-form" class="auth-form-section">
+            <input type="text" id="log-in-username" placeholder="Username" required>
+            <input type="password" id="log-in-password" placeholder="Password" required>
+            <button onclick="logIn()">Log In</button>
+        </div>
+    </div>
+
+    <!-- Logged-In Content: Only visible after log-in -->
+    <div id="engagement-content" style="display: none;">
+        <button id="log-out-btn" onclick="logOut()">Log Out</button>
+        <textarea id="post-input" placeholder="Share your thoughts..."></textarea>
+        <button id="post-btn">Post</button>
+        <div id="posts-container">
+            <!-- Posts will be added here -->
+        </div>
+    </div>
+    </div>
+</html>

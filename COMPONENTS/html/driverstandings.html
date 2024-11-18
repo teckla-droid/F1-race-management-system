@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Standings </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../../assets/f1_logo.svg" type="image/x-icon" />
+    <script type="text/javascript" src="../js/scripts.js"></script>
+    <script type="text/javascript" src="../js/driverstandings.js"></script>
+<div id="driver-standings" class="section">
+    <h1>Driver Standings</h1>
+<label for="standings-year">Select Year:</label>
+<select id="standings-year" onchange="fetchDriverStandings()">
+    <option value="2024" selected>2024</option>
+    <option value="2023">2023</option>
+    <option value="2022">2022</option>
+    <option value="2021">2021</option>
+    <option value="2020">2020</option>
+    <option value="2019">2019</option>
+    <option value="2018">2018</option>
+    <option value="2017">2017</option>
+    <option value="2016">2016</option>
+    <option value="2015">2015</option>
+    <!-- Add more years as needed -->
+</select>
+<div id="standings-data"></div>
+</div>

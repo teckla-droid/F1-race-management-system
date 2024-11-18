@@ -2,8 +2,8 @@ const tracks = [
     {
         location: "Bahrain",
         images: {
-        flag: "bahrain.png",
-        track: "bahrain.png",
+        flag: "../../../../../assets/flags/bahrain.png",
+        track: "../../../../../assets/tracks/bahrain.png",
         },
         info: {
         name: "Bahrain International Circuit",
@@ -17,8 +17,8 @@ const tracks = [
     {
         location: "Saudi Arabia",
         images: {
-        flag: "saudi_arabia.png",
-        track: "saudi_arabia.png",
+        flag: "../../../../../../assets/flags/saudi arabia.png",
+        track: "../../../../../../assets/tracks/saudi arabia.png",
         },
         info: {
         name: "Jeddah Street Circuit",
@@ -32,8 +32,8 @@ const tracks = [
     {
         location: "Australia",
         images: {
-        flag: "australia.png",
-        track: "australia.png",
+        flag: "../../../../../../assets/flags/australia.png",
+        track: "../../../../../../assets/tracks/australia.png",
         },
         info: {
         name: "Melbourne Grand Prix Circuit",
@@ -47,8 +47,8 @@ const tracks = [
     {
         location: "Italy",
         images: {
-        flag: "italy.png",
-        track: "italy.png",
+        flag: "../../../../../../../assets/flags/italia.png",
+        track: "../../../../../../../assets/tracks/italia.png",
         },
         info: {
         name: "Autodromo Enzo e Dino Ferrari",
@@ -62,8 +62,8 @@ const tracks = [
     {
         location: "United States",
         images: {
-        flag: "united_states.png",
-        track: "united_states2.png",
+        flag: "../../../../../../../assets/flags/united states.png",
+        track: "../../../../../../../assets/tracks/united states.png",
         },
         info: {
         name: "Miami International Autodrome",
@@ -77,8 +77,8 @@ const tracks = [
     {
         location: "Spain",
         images: {
-        flag: "spain.png",
-        track: "spain.png",
+        flag: "../../../../../../../assets/flags/spain.png",
+        track: "../../../../../../../assets/tracks/spain.png",
         },
         info: {
         name: "Circuit de Barcelona-Catalunya",
@@ -92,8 +92,8 @@ const tracks = [
     {
         location: "Monaco",
         images: {
-        flag: "monaco.png",
-        track: "monaco.png",
+        flag: "../../../../../../../assets/flags/monaco.png",
+        track: "../../../../../../assets/tracks/monaco.png",
         },
         info: {
         name: "Monaco Circuit",
@@ -107,8 +107,8 @@ const tracks = [
     {
         location: "Azerbaijan",
         images: {
-        flag: "azerbaijan.png",
-        track: "azerbaijan.png",
+        flag: "../../../../../../assets/flags/azerbaijan.png",
+        track: "../../../../../../assets/tracks/azerbaijan.png",
         },
         info: {
         name: "Baku City Circuit",
@@ -122,8 +122,8 @@ const tracks = [
     {
         location: "Canada",
         images: {
-        flag: "canada.png",
-        track: "canada.png",
+        flag: "../../../../../../assets/flags/canada.png",
+        track: "../../../../../assets/tracks/canada.png",
         },
         info: {
         name: "Gilles Villeneuve Circuit",
@@ -137,8 +137,8 @@ const tracks = [
     {
         location: "Great Britain",
         images: {
-        flag: "great_britain.png",
-        track: "great_britain.png",
+        flag: "../../../../../../assets/flags/great britain.png",
+        track: "../../../../../../assets/tracks/great britain.png",
         },
         info: {
         name: "Silverstone Circuit",
@@ -152,8 +152,8 @@ const tracks = [
     {
         location: "Austria",
         images: {
-        flag: "austria.png",
-        track: "austria.png",
+        flag: "../../../../../../assets/flags/austria.png",
+        track: "../../../../../assets/tracks/austria.png",
         },
         info: {
         name: "Red Bull Ring",
@@ -167,8 +167,8 @@ const tracks = [
     {
         location: "France",
         images: {
-        flag: "france.png",
-        track: "france.png",
+        flag: "../../../../../../assets/flags/france.png",
+        track: "../../../../../assets/tracks/france.png",
         },
         info: {
         name: "Paul Ricard Circuit",
@@ -182,8 +182,8 @@ const tracks = [
     {
         location: "Hungary",
         images: {
-        flag: "hungary.png",
-        track: "hungary.png",
+        flag: "../../../../../../assets/flags/hungary.png",
+        track: "../../../../../../assets/tracks/hungary.png",
         },
         info: {
         name: "Hungaroring",
@@ -197,8 +197,8 @@ const tracks = [
     {
         location: "Belgium",
         images: {
-        flag: "belgium.png",
-        track: "belgium.png",
+        flag: "../../../../../../../assets/flags/belgium.png",
+        track: "../../../../../../assets/tracks/belgium.png",
         },
         info: {
         name: "Spa-Francorchamps Circuit",
@@ -212,8 +212,8 @@ const tracks = [
     {
         location: "Netherlands",
         images: {
-        flag: "netherlands.png",
-        track: "netherlands.png",
+        flag: "../../../../../../../assets/flags/netherlands.png",
+        track: "../../../../../../assets/tracks/netherlands.png",
         },
         info: {
         name: "Zandvoort Circuit",
@@ -227,8 +227,8 @@ const tracks = [
     {
         location: "Italy",
         images: {
-        flag: "italy.png",
-        track: "italy2.png",
+        flag: "../../../../../../assets/flags/italia.png",
+        track: "../../../../../../assets/tracks/italia2.png",
         },
         info: {
         name: "Autodromo Nazionale Monza",
@@ -242,8 +242,8 @@ const tracks = [
     {
         location: "Singapore",
         images: {
-        flag: "singapore.png",
-        track: "singapore.png",
+        flag: "../../../../../../assets/flags/singapore.png",
+        track: "../../../../../assets/tracks/singapore.png",
         },
         info: {
         name: "Marina Bay Street Circuit",
@@ -257,8 +257,8 @@ const tracks = [
     {
         location: "Japan",
         images: {
-        flag: "japan.png",
-        track: "japan.png",
+        flag: "../../../../../../assets/flags/japan.png",
+        track: "../../../../../../assets/tracks/japan.png",
         },
         info: {
         name: "Suzuka Circuit",
@@ -272,8 +272,8 @@ const tracks = [
     {
         location: "United States",
         images: {
-        flag: "united_states.png",
-        track: "united_states.png",
+        flag: "../../../../../../assets/flags/united states.png",
+        track: "../../../../../assets/tracks/united states 2.png",
         },
         info: {
         name: "Circuit of the Americas",
@@ -287,8 +287,8 @@ const tracks = [
     {
         location: "Mexico",
         images: {
-        flag: "mexico.png",
-        track: "mexico.png",
+        flag: "../../../../../../assets/flags/mexico.png",
+        track: "../../../../../assets/tracks/mexico.png",
         },
         info: {
         name: "Hermanos Rodríguez Autodrome",
@@ -302,8 +302,8 @@ const tracks = [
     {
         location: "Brazil",
         images: {
-        flag: "brazil.png",
-        track: "brazil.png",
+        flag: "../../../../../../assets/flags/brasil.png",
+        track: "../../../../../assets/tracks/brasil.png",
         },
         info: {
         name: "José Carlos Pace Autodrome",
@@ -317,8 +317,8 @@ const tracks = [
     {
         location: "Abu Dhabi",
         images: {
-        flag: "abu_dhabi.png",
-        track: "abu_dhabi.png",
+        flag: "../../../../../../assets/flags/abu_dhabi.png",
+        track: "../../../../../../assets/tracks/abu_dhabi.png",
         },
         info: {
         name: "Yas Marina Circuit",
@@ -330,7 +330,6 @@ const tracks = [
         }
     },  
 ]
-
 const drivers = [
     {
         driver: {
@@ -338,13 +337,14 @@ const drivers = [
         surname: "Hamilton",
         number: "44"
         },
-        photo: "hamilton.png",
+        photo: "../../../../../../../../assets/drivers/lewham01.png",
         info: {
         team: "Mercedes",
         country: "United Kingdom",
-        podiums: "182",
+        podiums: "201",
         championships: "7",
         birthdate: "07/01/1985"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/hamilton.json"
         }
     },
     {
@@ -353,13 +353,14 @@ const drivers = [
         surname: "Verstappen",
         number: "1"
         },
-      photo: "verstappen.png",
+      photo: "../../../../../../assets/drivers/maxver01.png",
       info: {
         team: "Red Bull Racing",
         country: "Netherlands",
-        podiums: "60",
+        podiums: "111",
         championships: "1",
         birthdate: "30/09/1997"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/verstappen.json"
       }
     },
     {
@@ -368,28 +369,14 @@ const drivers = [
         surname: "Leclerc",
         number: "16"
       },
-      photo: "leclerc.png",
+      photo: "../../../../../../../../../../../../../../../assets/drivers/chalec01.png",
       info: {
         team: "Ferrari",
         country: "Monaco",
-        podiums: "13",
+        podiums: "41",
         championships: "None",
         birthdate: "16/10/1997"
-      }
-    },
-    {
-      driver: {
-        name: "Daniel",
-        surname: "Ricciardo",
-        number: "3"
-      },
-      photo: "ricciardo.png",
-      info: {
-        team: "McLaren",
-        country: "Australia",
-        podiums: "32",
-        championships: "None",
-        birthdate: "01/07/1989"
+        ,ergastLink: "http://ergast.com/api/f1/drivers/leclerc.json"
       }
     },
     {
@@ -398,13 +385,14 @@ const drivers = [
         surname: "Alonso",
         number: "14"
       },
-      photo: "alonso.png",
+      photo: "../../../../../../../assets/drivers/feralo01.png",
       info: {
-        team: "Alpine",
+        team: "Aston Martin",
         country: "Spain",
-        podiums: "98",
+        podiums: "106",
         championships: "2",
         birthdate: "29/07/1981"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/alonso.json"
       }
     },
     {
@@ -413,43 +401,14 @@ const drivers = [
         surname: "Gasly",
         number: "10"
       },
-      photo: "gasly.png",
+      photo: "../../../../../../../../../../../../../../../assets/drivers/piegas01.png",
       info: {
-        team: "AlphaTauri",
+        team: "Alpine",
         country: "France",
-        podiums: "3",
+        podiums: "5",
         championships: "None",
         birthdate: "07/02/1996"
-      }
-    },
-    {
-      driver: {
-        name: "Sebastian",
-        surname: "Vettel",
-        number: "5"
-      },
-      photo: "vettel.png",
-      info: {
-        team: "Aston Martin",
-        country: "Germany",
-        podiums: "122",
-        championships: "4",
-        birthdate: "03/07/1987"
-      }
-    },
-    {
-      driver: {
-        name: "Nicholas",
-        surname: "Latifi",
-        number: "6"
-      },
-      photo: "latifi.png",
-      info: {
-        team: "Williams",
-        country: "Canada",
-        podiums: "None",
-        championships: "None",
-        birthdate: "29/06/1995"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/gasly.json"
       }
     },
     {
@@ -458,28 +417,14 @@ const drivers = [
         surname: "Bottas",
         number: "77"
       },
-      photo: "bottas.png",
+      photo: "../../../../../../../../../../../../../../../assets/drivers/valbot01.png",
       info: {
-        team: "Alfa Romeo",
+        team: "Kck Sauber",
         country: "Finland",
         podiums: "67",
         championships: "None",
         birthdate: "28/08/1989"
-      }
-    },
-    {
-      driver: {
-        name: "Mick",
-        surname: "Schumacher",
-        number: "47"
-      },
-      photo: "schumacher.png",
-      info: {
-        team: "Haas F1 Team",
-        country: "Germany",
-        podiums: "None",
-        championships: "None",
-        birthdate: "22/03/1999"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/bottas.json"
       }
     },
     {
@@ -488,13 +433,14 @@ const drivers = [
         surname: "Russell",
         number: "63"
       },
-      photo: "russell.png",
+      photo: "../../../../../../../../../../../../../../assets/drivers/georus01.png",
       info: {
         team: "Mercedes",
         country: "United Kingdom",
-        podiums: "1",
+        podiums: "14",
         championships: "None",
         birthdate: "15/02/1998"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/russell.json"
       }
     },
     {
@@ -503,13 +449,14 @@ const drivers = [
         surname: "Perez",
         number: "11"
       },
-      photo: "perez.png",
+      photo: "../../../../../../../../../../../../../assets/drivers/serper01.png",
       info: {
         team: "Red Bull Racing",
         country: "Mexico",
-        podiums: "15",
+        podiums: "39",
         championships: "None",
         birthdate: "26/01/1990"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/perez.json"
       }
     },
     {
@@ -518,13 +465,14 @@ const drivers = [
         surname: "Sainz",
         number: "55"
       },
-      photo: "sainz.png",
+      photo: "../../../../../../../../../../../assets/drivers/carsai01.png",
       info: {
         team: "Ferrari",
         country: "Spain",
-        podiums: "6",
+        podiums: "25",
         championships: "None",
         birthdate: "01/09/1994"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/sainz.json"
       }
     },
     {
@@ -533,13 +481,14 @@ const drivers = [
         surname: "Norris",
         number: "4"
       },
-      photo: "norris.png",
+      photo: "../../../../../../../../../../../../../../../assets/drivers/lannor01.png",
       info: {
         team: "McLaren",
         country: "United Kingdom",
-        podiums: "5",
+        podiums: "25",
         championships: "None",
         birthdate: "13/11/1999"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/norris.json"
       }
     },
     {
@@ -548,13 +497,14 @@ const drivers = [
         surname: "Ocon",
         number: "31"
       },
-      photo: "ocon.png",
+      photo: "../../../../../../../../../../../../assets/drivers/estoco01.png",
       info: {
         team: "Alpine",
         country: "France",
-        podiums: "2",
+        podiums: "4",
         championships: "None",
         birthdate: "17/09/1996"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/ocon.json"
       }
     },
     {
@@ -563,13 +513,14 @@ const drivers = [
         surname: "Tsunoda",
         number: "22"
       },
-      photo: "tsunoda.png",
+      photo: "../../../../../../../../../../../../assets/drivers/yuktsu01.png",
       info: {
-        team: "AlphaTauri",
+        team: "RB",
         country: "Japan",
         podiums: "None",
         championships: "None",
         birthdate: "11/05/2000"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/tsunoda.json"
       }
     },
     {
@@ -578,13 +529,14 @@ const drivers = [
         surname: "Stroll",
         number: "18"
       },
-      photo: "stroll.png",
+      photo: "../../../../../../../../../assets/drivers/lanstr01.png",
       info: {
         team: "Aston Martin",
         country: "Canada",
         podiums: "3",
         championships: "None",
         birthdate: "29/10/1998"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/stroll.json"
       }
     },
     {
@@ -593,13 +545,14 @@ const drivers = [
         surname: "Albon",
         number: "23"
       },
-      photo: "albon.png",
+      photo: "../../../../../../../../../../../../../../../assets/drivers/alealb01.png",
       info: {
         team: "Williams",
         country: "Thailand",
         podiums: "2",
         championships: "None",
         birthdate: "23/03/1996"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/albon.json"
       }
     },
     {
@@ -608,13 +561,14 @@ const drivers = [
         surname: "Zhou",
         number: "24"
       },
-      photo: "zhou.png",
+      photo: "../../../../../../../../../../../../assets/drivers/guazho01.png",
       info: {
-        team: "Alfa Romeo",
+        team: "Kick Sauber",
         country: "China",
         podiums: "None",
         championships: "None",
         birthdate: "30/05/1999"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/zhoul.json"
       }
     },
     {
@@ -623,23 +577,107 @@ const drivers = [
         surname: "Magnussen",
         number: "20"
       },
-      photo: "magnussen.png",
+      photo: "../../../../../../../../../../../../assets/drivers/kevmag01.png",
       info: {
         team: "Haas F1 Team",
         country: "Denmark",
         podiums: "1",
         championships: "None",
         birthdate: "05/10/1992"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/magnussen.json"
       }
     },
-  ]
+    {
+        driver: {
+            name: "Oscar",
+            surname: "Piastri",
+            number: "81"
+            },
+            photo: "../../../../../../../../../../../../assets/drivers/oscpia01.png",
+            info: {
+                team: "McLaren F1 Team",
+                country: "Australia",
+                podiums: "9",
+                championships: "None",
+                birthdate: "06/04/2001"
+                ,ergastLink: "https://ergast.com/api/f1/drivers/piastri.json"
+
+    }
+    },
+    {
+        driver: {
+            name: "Franco",
+            surname: "Colapinto",
+            number: "43"
+            },
+            photo: "../../../../../../../../../../../../assets/drivers/fracol01.png",
+            info: {
+                team: "Williams",
+                country: "Argentina",
+                podiums: "None",
+                championships: "None",
+                birthdate: "27/05/2003"
+                ,ergastLink: "https://ergast.com/api/f1/drivers/colapinto.json"
+                }
+    },
+    {
+        driver: {
+            name: "Liam ",
+            surname: "Lawson",
+            number: "30"
+            },
+            photo: "../../../../../../../../../../../../assets/drivers/lialaw01.png",
+            info: {
+                team: "RB",
+                country: "New Zealand",
+                podiums: "None",
+                championships: "None",
+                birthdate: "11/02/2002"
+                ,ergastLink: "https://ergast.com/api/f1/drivers/lawson.json"
+                }
+    },
+    {
+        driver: {
+            name: "Ollie",
+            surname: "Bearman",
+            number: "47"
+            },
+            photo: "../../../../../../../../../../../../assets/drivers/olibea01.png",
+            info: {
+                team: "Haas F1 Team",
+                country: "England",
+                podiums: "None",
+                championships: "None",
+                birthdate: "27/05/2003"
+                ,ergastLink: "https://ergast.com/api/f1/drivers/bearman.json"
+    }
+    },
+    {
+        driver: {
+            name: "Nico",
+            surname: "Hulkenberg",
+            number: "27"
+            },
+            photo: "../../../../../../../../../../../../assets/drivers/nichul01.png",
+            info: {
+                team: "Haas F1 Team",
+                country: "Germany",
+                podiums: "None",
+                championships: "None",
+                birthdate: "19/08/1987"
+                ,ergastLink: "https://ergast.com/api/f1/drivers/hulkenberg.json"
+    }
+    },
+
+]
+
 
 const teams = [
     {
         name: "Mercedes",
         images: {
-        logo: "mercedes.png",
-        car: "mercedes.png"
+        logo: "../../../../../../../../../../../../assets/logos/mercedes-logo.png",
+        car: "../../../../../../../../../../../../../assets/cars/mercedes.png"
         },
         info: {
         full_name: "Mercedes-AMG Petronas Formula One Team",
@@ -648,23 +686,23 @@ const teams = [
         championships: "8",
         engine: "Mercedes",
         base: "Brackley, United Kingdom"
-      },
-      drivers: {
+    },
+        drivers: {
         first: "Lewis Hamilton",
         second: "George Russell"
-      }
+    }
     },
     {
-      name: "Red Bull",
-      images: {
-        logo: "redbull.png",
-        car: "redbull.png"
-      },
-      info: {
+        name: "Red Bull",
+        images: {
+        logo: "../../../../../../../../../../../../assets/logos/red-bull-racing-logo.png",
+        car: "../../../../../../../../../../../../../assets/cars/red-bull-racing.png"
+        },
+        info: {
         full_name: "Red Bull Racing",
         chief: "Christian Horner",
         debut: "1997",
-        championships: "4",
+        championships: "6",
         engine: "Red Bull Engines",
         base: "Milton Keynes, United Kingdom"
       },
@@ -676,12 +714,12 @@ const teams = [
     {
       name: "Ferrari",
       images: {
-        logo: "ferrari.png",
-        car: "ferrari.png"
+        logo: "../../../../../../../../../../../../assets/logos/ferrari-logo.png",
+        car: "../../../../../../../../../../../../../assets/cars/ferrari.png"
       },
       info: {
         full_name: "Scuderia Ferrari",
-        chief: "Mattia Binotto",
+        chief: "Frédéric Vasseur",
         debut: "1950",
         championships: "16",
         engine: "Ferrari",
@@ -695,68 +733,68 @@ const teams = [
     {
       name: "McLaren",
       images: {
-        logo: "mclaren.png",
-        car: "mclaren.png"
+        logo: "../../../../../../../../../../../../../../../assets/logos/mclaren-logo.png",
+        car: "../../../../../../../../../../../../../assets/cars/mclaren.png"
       },
       info: {
         full_name: "McLaren F1 Team",
-        chief: "Andreas Seidl",
+        chief: "Andrea Stella",
         debut: "1966",
         championships: "8",
         engine: "Mercedes",
         base: "Woking, United Kingdom"
       },
       drivers: {
-        first: "Daniel Ricciardo",
+        first: "Oscar Piastri",
         second: "Lando Norris"
       }
     },
     {
       name: "Alpine",
       images: {
-        logo: "alpine.png",
-        car: "alpine.png"
+        logo: "../../../../../../../../../../../../../assets/logos/alpine-logo.png",
+        car: "../../../../../../../../../../../../../../assets/cars/alpine.png"
       },
       info: {
         full_name: "Alpine F1 Team",
-        chief: "Otmar Szafnauer",
+        chief: "Oliver Oakes",
         debut: "1986",
         championships: "2",
         engine: "Renault",
         base: "Enstone, United Kingdom"
       },
       drivers: {
-        first: "Fernando Alonso",
+        first: "Pierre Gasly",
         second: "Esteban Ocon"
       }
     },
     {
-      name: "AlphaTauri",
+      name: "RB",
       images: {
-        logo: "alphatauri.png",
-        car: "alphatauri.png"
+        logo: "../../../../../../../../../../../../../assets/logos/rb-logo.png",
+        car: "../../../../../../../../../../../../assets/cars/rb.png"
       },
       info: {
-        full_name: "Scuderia AlphaTauri",
-        chief: "Franz Tost",
+        full_name: "Visa Cash App RB Formula One Team",
+        chief: "Laurent Mekies",
         debut: "1985",
         championships: "None",
         engine: "Red Bull Engines",
         base: "Faenza, Italy"
       },
       drivers: {
-        first: "Pierre Gasly",
+        first: "Liam Lawson",
         second: "Yuki Tsunoda"
       }
     },
     {
       name: "Aston Martin",
       images: {
-        logo: "astonmartin.png",
-        car: "astonmartin.png"
+        logo: "../../../../../../../../../../../../../assets/logos/aston-martin-logo.png",
+        car: "../../../../../../../../../../../assets/cars/aston-martin.png"
       },
       info: {
-        full_name: "Aston Martin Cognizant Formula One Team",
+        full_name: "Aston Martin Aramco F1 Team",
         chief: "Mike Krack",
         debut: "2018",
         championships: "None",
@@ -764,38 +802,38 @@ const teams = [
         base: "Silverstone, United Kingdom"
       },
       drivers: {
-        first: "Sebastian Vettel",
+        first: "Fernando Alonso",
         second: "Lance Stroll"
       }
     },
     {
       name: "Williams",
       images: {
-        logo: "williams.png",
-        car: "williams.png"
+        logo: "../../../../../../../../../../../../assets/logos/williams-logo.png",
+        car: "../../../../../../../../../../../assets/cars/williams.png"
       },
       info: {
         full_name: "Williams Racing",
-        chief: "Jost Capito",
+        chief: "James Vowles",
         debut: "1978",
         championships: "9",
         engine: "Mercedes",
         base: "Grove, United Kingdom"
       },
       drivers: {
-        first: "Nicholas Latifi",
+        first: "Franco Colapinto",
         second: "Alexander Albon"
       }
     },
     {
-      name: "Alfa Romeo",
+      name: "Kick Sauber",
       images: {
-        logo: "alfaromeo.png",
-        car: "alfaromeo.png"
+        logo: "../../../../../../../../../../../../../../../assets/logos/kick-sauber-logo.png",
+        car: "../../../../../../../../../../../../assets/cars/kick-sauber.png"
       },
       info: {
-        full_name: "Alfa Romeo F1 Team ORLEN",
-        chief: "Frédéric Vasseur",
+        full_name: "Stake F1 Team Kick Sauber",
+        chief: "Alessandro Alunni Bravi",
         debut: "1993",
         championships: "None",
         engine: "Ferrari",
@@ -809,19 +847,19 @@ const teams = [
     {
       name: "Haas",
       images: {
-        logo: "haas.png",
-        car: "haas.png"
+        logo: "../../../../../../../../../../../../../assets/logos/haas-logo.png",
+        car: "../../../../../../../../../../../../assets/cars/haas.png"
       },
       info: {
-        full_name: "Uralkali Haas F1 Team",
-        chief: "Guenther Steiner",
+        full_name: "MoneyGram Haas F1 Team",
+        chief: "Ayao Komatsu",
         debut: "2016",
         championships: "None",
         engine: "Ferrari",
         base: "Kannapolis, United States"
       },
       drivers: {
-        first: "Mick Schumacher",
+        first: "Nico Hulkenberg",
         second: "Kevin Magnussen"
       }
     },

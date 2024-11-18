@@ -3,20 +3,8 @@
     "development"
   ],
   "hints": {
-    "axe/forms": [
-      "default",
-      {
-        "select-name": "off"
-      }
-    ],
-    "no-inline-styles": "off",
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
-      }
-    ],
-    "css-prefix-order": "off"
+    "axe/text-alternatives": "off",
+    "no-inline-styles": "off"
   },
   "browserslist": [
     "defaults",

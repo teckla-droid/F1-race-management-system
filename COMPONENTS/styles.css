@@ -65,7 +65,7 @@ header {
 }
 
 header .logo {
-    height: 50px;
+    height: 40px;
 }
 
 header .btn-area {
@@ -94,7 +94,7 @@ header .nav li a {
     font-weight: bold;
     padding: 10px;
     color: var(--white-color);
-    font-size: 20px;
+    font-size: 15px;
     transition: 0.3s;
 }
 
@@ -688,70 +688,6 @@ footer {
     margin: 0;
 }
 
-/* Registration Form */
-
-#registration {
-    padding: 500px;
-    max-width: 10%;
-    margin: 0 auto;
-}
-
-#registration p {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.formLine {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.formLine label {
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 4px;
-    padding-left: 5px;
-}
-
-.formLine input {
-    font-size: 15px;
-    padding: 15px;
-    border: 1px solid var(--black-color);
-    border-radius: 5px;
-    transition: .3s;
-}
-
-.formLine input:focus {
-    outline: none;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.formLine:last-child {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.formLine #btnForm {
-    cursor: pointer;
-    width: 150px;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    border: 2px solid var(--main-color);
-    border-radius: 5px;
-    color: var(--white-color);
-    background-color: var(--main-color);
-    transition: .3s;
-}
-
-.formLine #btnForm:hover {
-    background-color: var(--red-color);
-    color: var(--main-color);
-}
-
 /* Creator and social networks */
 
 #credits {
@@ -775,347 +711,6 @@ footer {
     padding: 3px;
 }
 
-#contact label {
-    font-size: 35px;
-}
-
-#contact label a {
-    color: var(--white-color);
-    text-decoration: none;
-    padding: 0 5px;
-    border-radius: 5px;
-    transition: .3s;
-}
-
-
-/* Responsiveness */
-
-@media (max-width: 1200px) {
-
-.history {
-    margin: auto 100px 30px;
-}
-
-#registration {
-    max-width: 70%;
-}
-
-#credits {
-    padding: 40px 100px;
-}
-
-}
-
-@media (max-width: 992px) {
-
-.history {
-    margin: auto 80px  20px;
-}
-
-.history h2 {
-    margin: 5px auto;
-    font-size: 50px;
-}
-
-.history p {
-    font-size: 18px;
-}
-
-#tracks .title,
-#drivers .title,
-#teams .title {
-    font-size: 45px;
-    margin: 40px 0 0 70px;
-}
-
-.title .img-icon {
-    height: 60px;
-} 
-
-.scroll-x {
-    padding: 25px 15px;
-}
-
-.content > a {
-    margin: 20px 0;
-    font-size: 23px;
-}
-
-.card-container {
-    margin: 0 10px 0 10px;
-}
-
-#registration {
-    padding: 45px;
-    max-width: 80%;
-}
-
-#credits {
-    padding: 40px 80px;
-}
-
-}
-
-@media (max-width: 768px) {
-
-.history {
-    margin: auto 50px 15px;
-}
-
-.history h2 {
-    margin: 5px auto;
-}
-
-.history p {
-    font-size: 17px;
-}
-
-#tracks .title,
-#drivers .title,
-#teams .title {
-    margin: 30px 0 0 55px;
-}
-
-.scroll-x {
-    padding: 20px 5px;
-}
-
-.content > a {
-    margin: 15px 0;
-    font-size: 20px;
-}
-
-.card-container {
-    margin: 0 10px 0 10px;
-}
-
-#registration {
-    padding: 35px;
-    max-width: 85%;
-}
-
-#credits {
-    padding: 30px 50px;
-}
-
-}
-
-@media (max-width: 576px) {
-
-  /* Responsive menu */
-
-header .nav {
-    display: none;
-    grid-area: nav;
-}
-
-header .logo {
-    height: 25px;
-    grid-area: logo;
-}
-
-header .btn-area {
-    display: block;
-    text-align: right;
-    grid-area: btn;
-}
-
-header {
-    padding: 12px 22px;
-    grid-template-areas: 
-    "logo btn"
-		"nav nav";
-}
-
-.btn-area.menu-open ~ .nav  {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-header .nav li a {
-    font-size: 16px;
-    padding: 8px;
-}
-
-  /* General responsiveness */
-
-.history {
-    margin: auto 15px 20px;
-}
-
-.history h2 {
-    font-size: 35px;
-    margin: 5px auto;
-}
-
-.history p {
-    font-size: 16px;
-}
-
-#tracks .title,
-#drivers .title,
-#teams .title {
-    font-size: 35px;
-    margin: 20px 0 0 35px;
-}
-
-.title .img-icon {
-    height: 45px;
-} 
-
-.scroll-x {
-    padding: 10px 0px;
-}
-
-.content:hover > a {
-    display: none;
-}
-
-  /* Responsiveness of track cards */
-
-.card-container {
-    margin: 0 3px 0 3px;
-}
-
-#tracks .card-container {
-    width: 318px;
-    height: 250px;
-}
-
-#tracks .card-front-content,
-#tracks .card-back-content {
-    padding: 15px 10px;
-}
-
-#tracks .card-front-header img {
-    height: 50px;
-    width: 80px;
-}
-
-#tracks .card-front-header div {
-    height: 50px;
-}
-
-#tracks .card-front-header label {
-    font-size: 23px;
-}
-
-#tracks .card-front-body img {
-    max-height: 170px;
-}
-
-#tracks .card-back-header h3 {
-    font-size: 17px;
-}
-
-#tracks .card-back-body div p {
-    font-size: 15px;
-}
-
-#tracks .card-back-body div label {
-    font-size: 16px;
-}
-
-  /* Responsiveness of driver cards */
-
-#drivers .card-container {
-    width: 245px;
-    height: 347px;
-}
-
-#drivers .card-front-header 
-img {
-    width: 90%;
-    height: 90%;
-}
-
-#drivers .card-front-body h1 {
-    font-size: 65px;
-}
-
-#drivers .card-front-body h2 {
-    font-size: 18px;
-}
-
-#drivers .card-back-header h3 {
-    font-size: 17px;
-}
-
-#drivers .card-back-content {
-    padding: 15px;
-}
-
-#drivers .card-back-body div p {
-    padding: 0;
-}
-
-#drivers .card-back-body div label {
-    font-size: 17px;
-}
-
-  /* Responsiveness of team cards */
-
-#teams .card-container {
-    width: 350px;
-    height: 295px;
-}
-
-#teams .card-front-content, #teams .card-back-content {
-    padding: 15px;
-}
-
-#teams .card-front-body {
-    height: 60%;
-}
-
-#teams .card-back-body {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "team-leader entry-year"
-    "team-titles engine"
-    "primary-driver secondary-driver"
-    "base base";
-}
-
-#teams .card-back-header h3 {
-    font-size: 17px;
-}
-
-#teams .card-back-body div p {
-    padding: 0;
-}
-
-#teams .card-back-body div label {
-    font-size: 17px;
-}
-
-#registration {
-    padding: 20px;
-    max-width: 100%;
-}
-
-#registration p {
-    font-size: 17px;
-}
-
-.formLine label {
-    font-size: 16px;
-}
-
-.formLine #btnForm {
-    width: 100%;
-    font-size: 16px;
-}
-
-#credits {
-    padding: 30px 10px;
-}
-
-#creator label {
-    font-size: 15px;
-}
-}
 /* Table Styles */
 table {
     width: 100%;
@@ -1143,70 +738,21 @@ tr:hover {
     background-color: #444444; 
 }
 
-/* Weather Card */
-.weather-card {
-    background-color: #c5c5cd; 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin: 0 auto;
-    width: 80%; 
-}
-
 /* Additional styling for better structure */
 h2, h3 {
     color: #E10600; 
 }
 /* Fan Engagement Container */
 #fan-engagement {
-    header {
-        background-color: var(--black-color);
-        display: grid;
-        grid-template-columns: 200px 1fr;
-        position: sticky;
-        top: 0;
-        z-index: 99;
-        padding: 12px;
-    }
-    
-    header .logo {
-        height: 50px;
-    }
-    
-    header .btn-area {
-        display: none;
-    }
-    
-    header .btn-menu {
-        color: var(--white-color);
-        font-size: 25px;
-        display: inline-block;
-    }
-    
-    header .nav {
-        list-style-type: none;
-        flex-wrap: wrap;
-        display: flex;
-    }
-    
-    header .nav li {
-        margin: 10px;
-    }
-    
-    header .nav li a {
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 10px;
-        color: var(--white-color);
-        font-size: 20px;
-        transition: 0.3s;
-    }
-    
-    header .nav li a:hover {
-        background-color: var(--main-color);
-    }
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 20px;
+
 }
 
 /* Text area and Post Button styling */
@@ -1214,22 +760,23 @@ h2, h3 {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #555555; /* Darker border */
-    background-color: #a0a0a7; /* Match background */
-    color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #000000; 
+    background-color: #ffffff; 
+    color: #000000;
     font-size: 1rem;
     resize: none;
 }
 
 #post-btn {
-    width: 100%;
+    width: 20%;
     padding: 10px;
     background-color: #E10600; /* F1 Red */
     color: #FFFFFF;
     font-weight: bold;
     border: none;
     border-radius: 5px;
+    margin-bottom: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -1240,10 +787,10 @@ h2, h3 {
 
 /* Individual Post Styling */
 .post {
-    background-color: #333333; /* Slightly darker background */
+    background-color: #cacaca; /* Slightly darker background */
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(135, 135, 135, 0.3);
+    margin-bottom: 20px;
     padding: 15px;
 }
 
@@ -1255,7 +802,7 @@ h2, h3 {
 
 .post-content {
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #171616;
     margin-bottom: 12px;
 }
 
@@ -1288,7 +835,7 @@ h2, h3 {
 .comment-section {
     margin-top: 12px;
     padding-left: 15px;
-    border-left: 2px solid #444444; /* Slightly lighter grey for comment section border */
+    border-left: 2px solid #ffffff; /* Slightly lighter grey for comment section border */
 }
 
 .comment-input-section {
@@ -1300,9 +847,9 @@ h2, h3 {
     padding: 6px;
     border-radius: 4px;
     border: 1px solid #555555;
-    background-color: #1D1D1F; /* Match with the dark theme */
+    background-color: #6e6e6e; /* Match with the dark theme */
     color: #FFFFFF;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     resize: none;
 }
 
@@ -1324,78 +871,16 @@ h2, h3 {
 /* Individual Comment Styling */
 .comment {
     padding: 8px;
-    background-color: #2C2C3A; /* Dark grey for comments */
+    background-color: #ffffff; /* Dark grey for comments */
     border-radius: 4px;
     margin-bottom: 6px;
     font-size: 0.9rem;
-    color: #FFFFFF;
-}
-#track-select {
-    padding: 8px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #C0C0C0; /* Light grey to match theme */
-    background-color: #2C2C3A;
-    color: #FFFFFF;
-    margin-top: 10px;
-    width: 100%;
-    max-width: 300px;
+    color: #000000;
 }
 
-#weather-info {
-    margin-top: 20px;
-}
-/* General style for the dropdown container */
-.section label {
-    font-size: 18px;
-    color: #be1b1b; 
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Styling the select dropdown */
-#schedule-year, #standings-year {
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    color: #FFFFFF;
-    background-color: #2C2C3A; /* Dark grey to match theme */
-    border: 1px solid #C0C0C0; /* Light grey border */
-    border-radius: 5px;
-    margin-bottom: 20px;
-    appearance: none; /* Remove default arrow */
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-/* Hover and focus effects */
-#schedule-year:hover, #standings-year:hover,
-#schedule-year:focus, #standings-year:focus {
-    background-color: #333333; /* Slightly lighter on hover */
-    border-color: #E10600; /* F1 Red border on focus/hover */
-    outline: none; /* Remove default focus outline */
-}
-
-/* Dropdown arrow styling (compatible for most browsers) */
-#schedule-year::after, #standings-year::after {
-    content: "▼";
-    font-size: 12px;
-    color: #E10600; /* F1 Red */
-    position: absolute;
-    right: 15px;
-    pointer-events: none; /* Prevent click on icon */
-}
-.weather-icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-    filter: brightness(1.2); /* Makes colors pop on dark background */
-}
 /* Auth Section Styling in Fan Engagement */
 .auth-form {
-    background-color: #2C2C3A;
+    background-color: #383737;
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 8px;
@@ -1411,7 +896,7 @@ h2, h3 {
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    border: 1px solid #C0C0C0;
+    border: 1px solid #535353;
     background-color: #1D1D1F;
     color: #FFFFFF;
 }
@@ -1487,7 +972,7 @@ h2, h3 {
 }
 
 .auth-form-section button {
-    width: 60%;
+    width: 20%;
     padding: 10px;
     background-color: #E10600; /* F1 Red */
     color: #FFFFFF;
@@ -1514,6 +999,7 @@ h2, h3 {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #log-out-btn:hover {
@@ -1525,3 +1011,84 @@ h2, h3 {
     background-color: #A10400; /* Even darker red when clicked */
     transform: scale(0.98); /* Slightly shrink on active click */
 }
+/* Weather Card */
+.weather-card {
+    background-color: #c2c2c4; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0 auto;
+    width: 80%; 
+}
+.weather-card h2 {
+    text-align: center;
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #E10600; /* F1 Red */
+    margin-bottom: 15px; /* Space below the title */
+}
+#weather-info {
+    margin-top: 20px;
+}
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    filter: brightness(1.2); /* Makes colors pop on dark background */
+}
+#track-select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0; /* Light grey to match theme */
+    background-color: #2C2C3A;
+    color: #FFFFFF;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* General style for the dropdown container */
+.section label {
+    font-size: 18px;
+    color: #be1b1b; 
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Styling the select dropdown */
+#schedule-year, #standings-year {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #2C2C3A; /* Dark grey to match theme */
+    border: 1px solid #C0C0C0; /* Light grey border */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    appearance: none; /* Remove default arrow */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hover and focus effects */
+#schedule-year:hover, #standings-year:hover,
+#schedule-year:focus, #standings-year:focus {
+    background-color: #333333; /* Slightly lighter on hover */
+    border-color: #E10600; /* F1 Red border on focus/hover */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Dropdown arrow styling (compatible for most browsers) */
+#schedule-year::after, #standings-year::after {
+    content: "▼";
+    font-size: 12px;
+    color: #E10600; /* F1 Red */
+    position: absolute;
+    right: 15px;
+    pointer-events: none; /* Prevent click on icon */
+}
+

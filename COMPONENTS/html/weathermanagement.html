@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather </title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../../assets/f1_logo.svg" type="image/x-icon" />
+    <script type="text/javascript" src="../js/scripts.js"></script>
+    <script type="text/javascript" src="../js/weathermanagement.js"></script>
+</head>
+<div id="weather" class="section"> 
+    <h1>Weather </h1>
+<label for="track-select">Select Track Location:</label>
+<select id="track-select" onchange="fetchWeatherData()">
+    <option value="Monza">Monza, Italy</option>
+    <option value="Silverstone">Silverstone, UK</option>
+    <option value="Suzuka">Suzuka, Japan</option>
+    <option value="Austin">Austin, USA</option>
+    <option value="Melbourne">Melbourne, Australia</option>
+    <option value="Spa">Spa, Belgium</option>
+    <option value="Shanghai">Shanghai, China</option>
+    <option value="Sao Paulo">Sao Paulo, Brazil</option>
+    <option value="Miami">Miami, USA</option>
+    <option value="Barcelona">Barcelona, Spain</option>
+    <option value="Baku">Baku, Azerbaijan</option>
+    <option value="Singapore">Singapore, Singapore</option>
+    <option value="Mexico">Mexico, Mexico</option>
+    <option value="Monaco">Monaco, Monaco</option>
+    <option value="Montreal">Montreal, Canada</option>
+    <option value="Zandvoort">Zandvoort, Netherlands</option>
+    <option value="Spielberg">Spielberg, Austria</option>
+    <option value="Budapest">Budapest, Hungary</option>
+    <option value="Sakhir">Sakhir, Bahrain</option>
+    <option value="Jeddah">Jeddah, Saudi Arabia</option>
+    <option value="Lusail">Lusail, Qatar</option>
+    <option value="Imola">Imola, Emilia Romagna</option>
+</select>
+
+<div id="weather-info"></div>
+</html>
