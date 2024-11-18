@@ -4,7 +4,11 @@ function fetchSafetyManagementData() {
     
     const incidents = [
         { description: 'Crash at turn 4', severity: 'High', response: 'Red flag, medical team dispatched' },
-        { description: 'Minor collision at pit lane', severity: 'Low', response: 'Safety car deployed' }
+        { description: 'Minor collision at pit lane', severity: 'Low', response: 'Safety car deployed' },
+        { description: 'Lap time violation', severity: 'Medium', response: 'Immediate evacuation' },
+        { description: 'Lap time violation', severity: 'Medium', response: 'Immediate evacuation' }
+
+
     ];
 
     safetyManagementSection.innerHTML = `

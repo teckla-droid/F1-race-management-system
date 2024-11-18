@@ -1035,17 +1035,14 @@ tr:hover {
     right: 15px;
     pointer-events: none; /* Prevent click on icon */
 }
-/* Live F1 Race timings */
+/* Live Timings */
 
-#live-race-timings {
+#live-timings {
     padding: 65px;
     text-align: center;
     border-radius: 8px;
     margin-top: 20px;
 }
-
-
-
 /* Driver standings */
 
 #driver-standings {
