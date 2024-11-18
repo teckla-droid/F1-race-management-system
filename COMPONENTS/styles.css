@@ -1,6 +1,5 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700;900&display=swap');
-
 /* Color palette */
 :root {
     --background-color: #f1f3f5;
@@ -9,7 +8,6 @@
     --white-color: #ffffff;
     --main-color: #e10600;
 }
-
 /* Smooth scroll */
 html {
     scroll-behavior: smooth;
@@ -18,7 +16,6 @@ html {
 :target {
     scroll-margin-top: 6rem;
 }
-
 /* General */
 * {
     margin: 0;
@@ -30,7 +27,6 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--background-color);
 }
-
 /* Scrollbar */
 
 body::-webkit-scrollbar,
@@ -41,7 +37,7 @@ body::-webkit-scrollbar,
 
 body::-webkit-scrollbar-track,
 .scroll-x::-webkit-scrollbar-track {
-    border-radius: 50px;
+    border-radius: 60px;
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -49,9 +45,8 @@ body::-webkit-scrollbar-thumb,
 .scroll-x::-webkit-scrollbar-thumb {
     background-color: var(--black-color);
     border: 1px solid var(--gray-color);
-    border-radius: 50px;
+    border-radius: 6px;
 }
-
 /* Header */
 
 header {
@@ -63,7 +58,6 @@ header {
     z-index: 99;
     padding: 12px;
 }
-
 header .logo {
     height: 40px;
 }
@@ -101,7 +95,6 @@ header .nav li a {
 header .nav li a:hover {
     background-color: var(--main-color);
 }
-
 /* Carousel */
 
 main .carousel {
@@ -200,7 +193,6 @@ main .carousel {
     from {opacity: .4} 
     to {opacity: 1}
 }
-
 /* History */
 
 .history {
@@ -217,7 +209,6 @@ main .carousel {
     font-size: 18px;
     margin-top: 10px;
 }
-
 /* Indicators */
 
 #info {
@@ -307,7 +298,6 @@ main .carousel {
 .card-back {
     transform: rotateY(180deg);
 }
-
 /* General cards */
 
 .scroll-x {
@@ -361,7 +351,6 @@ main .carousel {
 #tracks, #drivers, #teams {
     white-space: nowrap;
 }
-
 /* General track card */
 
 #tracks .card-container {
@@ -474,7 +463,6 @@ main .carousel {
     font-weight: bold;
     font-size: 18px;
 }
-
 /* General driver card */
 
 #drivers .card-container {
@@ -560,7 +548,6 @@ main .carousel {
     font-size: 18px;
     font-weight: bold;
 }
-
 /* General team card */
 
 #teams .card-container {
@@ -681,13 +668,11 @@ main .carousel {
     font-weight: bold;
     font-size: 18px;
 }
-
 /* Footer */
 
 footer {
     margin: 0;
 }
-
 /* Creator and social networks */
 
 #credits {
@@ -710,51 +695,113 @@ footer {
     font-size: 18px;
     padding: 3px;
 }
+/* weather section */
 
-/* Table Styles */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    padding: 40px 135px;
+    gap: 10px;
+}
+
+#weather label {
     font-size: 18px;
-    text-align: center;
+    padding: 3px;
 }
-
-th, td {
-    padding: 15px;
-    border: 1px solid #C0C0C0; /* Light grey */
-}
-
-th {
-    background-color: #E10600; /* F1 Red */
-    color: #FFFFFF;
-}
-
-td {
-    background-color: #efefefb9; 
-}
-
-tr:hover {
-    background-color: #444444; 
-}
-
-/* Additional styling for better structure */
-h2, h3 {
-    color: #E10600; 
-}
-/* Fan Engagement Container */
-#fan-engagement {
-    background-color: #ffffff;
+/* Weather Card */
+.weather-card {
+    background-color: #c2c2c4; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     margin: 0 auto;
-    width: 80%;
-    margin-bottom: 20px;
-
+    width: 100%; 
+}
+.weather-card h2 {
+    text-align: center;
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #E10600; /* F1 Red */
+    margin-bottom: 15px; /* Space below the title */
+}
+#weather-info {
+    margin-top: 20px;
+}
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    filter: brightness(1.2); /* Makes colors pop on dark background */
+}
+#track-select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0; /* Light grey to match theme */
+    background-color: #2C2C3A;
+    color: #FFFFFF;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+/* General style for the dropdown container */
+.section label {
+    font-size: 18px;
+    color: #be1b1b; 
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+/* fan engagement container */
+#fan-engagement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-color);
+    padding: 40px 135px;
+    gap: 10px;
+}
+/* Auth Section Styling in Fan Engagement */
+.auth-form {
+    background-color: #d4d4d4;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+.auth-form h2, .auth-form h3 {
+    color: #E10600; /* F1 Red */
 }
 
+.auth-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #535353;
+    background-color: #282828;
+    color: #FFFFFF;
+}
+.auth-form button {
+    width: 50%;
+    padding: 10px;
+    background-color: #ea3b35; /* F1 Red */
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: #e3110a; /* Darker F1 Red on hover */
+}
 /* Text area and Post Button styling */
 #post-input {
     width: 100%;
@@ -767,7 +814,6 @@ h2, h3 {
     font-size: 1rem;
     resize: none;
 }
-
 #post-btn {
     width: 20%;
     padding: 10px;
@@ -784,7 +830,6 @@ h2, h3 {
 #post-btn:hover {
     background-color: #C00500; /* Darker F1 Red on hover */
 }
-
 /* Individual Post Styling */
 .post {
     background-color: #cacaca; /* Slightly darker background */
@@ -805,7 +850,6 @@ h2, h3 {
     color: #171616;
     margin-bottom: 12px;
 }
-
 /* Post Actions (Like & Comment Buttons) */
 .post-actions {
     display: flex;
@@ -867,7 +911,6 @@ h2, h3 {
 .comment-input-section button:hover {
     background-color: #C00500; /* Darker F1 Red on hover */
 }
-
 /* Individual Comment Styling */
 .comment {
     padding: 8px;
@@ -877,79 +920,12 @@ h2, h3 {
     font-size: 0.9rem;
     color: #000000;
 }
-
-/* Auth Section Styling in Fan Engagement */
-.auth-form {
-    background-color: #383737;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.auth-form h2, .auth-form h3 {
-    color: #E10600; /* F1 Red */
-}
-
-.auth-form input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #535353;
-    background-color: #1D1D1F;
-    color: #FFFFFF;
-}
-
-.auth-form button {
-    width: 50%;
-    padding: 10px;
-    background-color: #E10600; /* F1 Red */
-    color: #FFFFFF;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.auth-form button:hover {
-    background-color: #C00500; /* Darker F1 Red on hover */
-}
-
-/* Engagement Content Styling (visible after log-in) */
 #engagement-content {
-    padding: 15px;
-    background-color: #2C2C3A;
+    padding: 65px;
+    background-color: #c2bebe;
     border-radius: 8px;
     margin-top: 20px;
 }
-/* Modal Background */
-.modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    z-index: 1000; /* Ensure it appears on top */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #2C2C3A;
-    padding: 20px;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 8px;
-    position: relative;
-    text-align: center;
-    color: #FFFFFF;
-}
-
 /* Close Button */
 .close-btn {
     position: absolute;
@@ -958,33 +934,6 @@ h2, h3 {
     font-size: 24px;
     cursor: pointer;
     color: #FFFFFF;
-}
-
-/* Form Styling */
-.auth-form-section input {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #C0C0C0;
-    background-color: #bfbfc7;
-    color: #FFFFFF;
-}
-
-.auth-form-section button {
-    width: 20%;
-    padding: 10px;
-    background-color: #E10600; /* F1 Red */
-    color: #FFFFFF;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.auth-form-section button:hover {
-    background-color: #C00500; /* Darker F1 Red on hover */
 }
 /* Log Out Button Styling */
 #log-out-btn {
@@ -1011,44 +960,40 @@ h2, h3 {
     background-color: #A10400; /* Even darker red when clicked */
     transform: scale(0.98); /* Slightly shrink on active click */
 }
-/* Weather Card */
-.weather-card {
-    background-color: #c2c2c4; 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+/* Race Schedule */
+#race-schedule {
+    padding: 65px;
     text-align: center;
-    margin: 0 auto;
-    width: 80%; 
-}
-.weather-card h2 {
-    text-align: center;
-    font-size: 2rem; /* Adjust the font size as needed */
-    font-weight: bold;
-    color: #E10600; /* F1 Red */
-    margin-bottom: 15px; /* Space below the title */
-}
-#weather-info {
-    margin-top: 20px;
-}
-.weather-icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-    filter: brightness(1.2); /* Makes colors pop on dark background */
-}
-#track-select {
-    padding: 8px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #C0C0C0; /* Light grey to match theme */
-    background-color: #2C2C3A;
-    color: #FFFFFF;
-    margin-top: 10px;
-    width: 100%;
-    max-width: 300px;
+    border-radius: 8px;
+    margin-top: auto;
 }
 
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #C0C0C0; /* Light grey */
+}
+
+th {
+    background-color: #E10600; /* F1 Red */
+    color: #FFFFFF;
+}
+
+td {
+    background-color: #efefefb9; 
+}
+
+tr:hover {
+    background-color: #444444; 
+}
 /* General style for the dropdown container */
 .section label {
     font-size: 18px;
@@ -1073,7 +1018,6 @@ h2, h3 {
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
 }
-
 /* Hover and focus effects */
 #schedule-year:hover, #standings-year:hover,
 #schedule-year:focus, #standings-year:focus {
@@ -1091,4 +1035,33 @@ h2, h3 {
     right: 15px;
     pointer-events: none; /* Prevent click on icon */
 }
+/* Live F1 Race timings */
+
+#live-race-timings {
+    padding: 65px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+
+/* Driver standings */
+
+#driver-standings {
+    padding: 65px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* safety management */
+
+#safety-management {
+    padding: 65px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
 
