@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Race schedule</title>
@@ -7,14 +8,14 @@
     <link rel="shortcut icon" href="../assets/f1_logo.svg" type="image/x-icon" />
     <script type="text/javascript" src="../js/scripts.js"></script>
     <script type="text/javascript" src="../js/raceshedule.js"></script>
-
-
-
-<div id="race-schedule" class="section"> 
+</head>
+<body>
+    <div id="race-schedule" class="section"> 
     <h1>Race Schedule</h1>
 <label for="schedule-year">Select Year:</label>
 <select id="schedule-year" onchange="fetchRaceSchedule()">
-    <option value="2024" selected>2024</option>
+    <option value="" selected disabled>Choose a year</option>
+    <option value="2024">2024</option>
     <option value="2023">2023</option>
     <option value="2022">2022</option>
     <option value="2021">2021</option>
@@ -24,8 +25,8 @@
     <option value="2017">2017</option>
     <option value="2016">2016</option>
     <option value="2015">2015</option>
-    <!-- Add more years as needed -->
 </select>
+</body>    
 <div id="schedule-data"></div>
 </div>
 </html>

@@ -10,12 +10,16 @@ async function fetchDriverStandings() {
         const standingsData = document.getElementById('standings-data');
         standingsData.innerHTML = `
             <table>
+                <thead>
                 <tr>
                     <th>Position</th>
                     <th>Driver</th>
                     <th>Constructor</th>
                     <th>Points</th>
-                </tr>
+                    </tr>
+                    </thead>
+                    <tbody>
+            
                 ${standings.map(standing => `
                     <tr>
                         <td>${standing.position}</td>

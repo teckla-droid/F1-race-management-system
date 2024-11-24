@@ -768,10 +768,11 @@ footer {
 }
 /* Auth Section Styling in Fan Engagement */
 .auth-form {
-    background-color: #d4d4d4;
+    background-color: #f9f9f9;
     padding: 20px;
     margin-bottom: 15px;
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     text-align: center;
 }
 .auth-form h2, .auth-form h3 {
@@ -784,7 +785,7 @@ footer {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #535353;
-    background-color: #282828;
+    background-color: #f9f9f9;
     color: #FFFFFF;
 }
 .auth-form button {
@@ -826,103 +827,123 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-#post-btn:hover {
-    background-color: #C00500; /* Darker F1 Red on hover */
-}
-/* Individual Post Styling */
+/* Post Container */
 .post {
-    background-color: #cacaca; /* Slightly darker background */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(135, 135, 135, 0.3);
+    background-color: #FFFFFF; /* Light background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
     margin-bottom: 20px;
-    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #E0E0E0; /* Light grey border */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animation */
 }
 
+.post:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Post Header */
 .post-header {
+    font-size: 18px;
     font-weight: bold;
-    color: #E10600; /* F1 Red for headers */
-    margin-bottom: 8px;
+    color: #e81a1a; /* Light blue */
+    margin-bottom: 10px;
 }
 
+/* Post Content */
 .post-content {
-    font-size: 1rem;
-    color: #171616;
-    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333333; /* Dark grey */
+    margin-bottom: 15px;
+    line-height: 1.6; /* Comfortable line spacing */
 }
-/* Post Actions (Like & Comment Buttons) */
+
+/* Post Actions (Like and Comment Buttons) */
 .post-actions {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
 }
 
-.like-btn, .comment-btn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.post-actions button {
+    background-color: #EEEEEE; /* Light grey */
+    color: #333333; /* Dark grey text */
+    font-size: 14px;
     font-weight: bold;
-    transition: background-color 0.3s;
-    background-color: #555555; /* Darker grey for buttons */
-    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.like-btn:hover, .comment-btn:hover {
-    background-color: #777777; /* Lighter grey on hover */
+.post-actions button:hover {
+    background-color: #DDDDDD; /* Slightly darker grey on hover */
+    transform: scale(1.05); /* Slight enlargement */
 }
 
-.liked {
-    background-color: #E10600; /* F1 Red for liked state */
+/* Liked Button State */
+.like-btn.liked {
+    background-color: #e81a1a; 
+    color: #FFFFFF; /* White text */
 }
 
-/* Comment Section */
+/* Comment Section Inside a Post */
 .comment-section {
-    margin-top: 12px;
-    padding-left: 15px;
-    border-left: 2px solid #ffffff; /* Slightly lighter grey for comment section border */
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #E0E0E0; /* Light grey divider */
 }
 
-.comment-input-section {
+.comment {
+    background-color: #F9F9F9; /* Very light grey */
+    color: #333;
+    padding: 10px;
     margin-top: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
 }
 
+/* Add Comment Section */
 .comment-input-section textarea {
     width: 100%;
-    padding: 6px;
-    border-radius: 4px;
-    border: 1px solid #555555;
-    background-color: #6e6e6e; /* Match with the dark theme */
-    color: #FFFFFF;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    background-color: #FFFFFF;
+    color: #333;
+    font-size: 14px;
     resize: none;
 }
 
 .comment-input-section button {
-    padding: 6px 10px;
-    background-color: #E10600; /* F1 Red */
+    background-color: #e81a1a; 
     color: #FFFFFF;
+    padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    margin-top: 10px;
     cursor: pointer;
-    font-size: 0.9rem;
-    transition: background-color 0.3s;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .comment-input-section button:hover {
+    background-color: #bf1f14; 
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+#post-btn:hover {
     background-color: #C00500; /* Darker F1 Red on hover */
 }
-/* Individual Comment Styling */
-.comment {
-    padding: 8px;
-    background-color: #ffffff; /* Dark grey for comments */
-    border-radius: 4px;
-    margin-bottom: 6px;
-    font-size: 0.9rem;
-    color: #000000;
-}
+
 #engagement-content {
     padding: 65px;
-    background-color: #c2bebe;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -947,7 +968,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -968,32 +989,105 @@ footer {
     margin-top: auto;
 }
 
-/* Table Styles */
+/* Table Container */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Remove gaps between cells */
     margin: 20px 0;
-    font-size: 18px;
+    background-color: #2C2C3A; /* F1 dark grey background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures borders stay rounded */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Table Header Styling */
+thead {
+    background-color: #E10600; /* F1 Red for the header */
+    color: #FFFFFF; /* White text */
+    font-weight: bold;
     text-align: center;
 }
 
-th, td {
+thead th {
     padding: 15px;
-    border: 1px solid #C0C0C0; /* Light grey */
+    font-size: 18px;
+    text-transform: uppercase; /* Bold F1-inspired text */
+    letter-spacing: 0.05em;
 }
 
-th {
-    background-color: #E10600; /* F1 Red */
+/* Table Body Styling */
+tbody {
+    color: #FFFFFF; /* White text for rows */
+}
+
+tbody tr {
+    border-bottom: 1px solid #444444; /* Subtle row divider */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+tbody tr:hover {
+    background-color: #333333; /* Slightly lighter grey on hover */
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* Alternate Row Colors for Body */
+tbody tr:nth-child(even) {
+    background-color: #2F2F3B; /* Slightly darker grey for alternating rows */
+}
+
+/* Highlight the First Column */
+tbody td:first-child {
+    font-weight: bold;
+    color: #E10600; /* F1 Red */
+}
+
+/* Table Footer Styling (if used) */
+tfoot {
+    background-color: #1D1D1F; /* Dark footer for separation */
     color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
 }
 
-td {
-    background-color: #efefefb9; 
+tfoot td {
+    padding: 15px;
 }
 
-tr:hover {
-    background-color: #444444; 
+/* Responsive Table Styling */
+@media (max-width: 768px) {
+    table, thead, tbody, tfoot, th, td, tr {
+        display: block; /* Stacks rows for small screens */
+    }
+
+    thead {
+        display: none; /* Hide headers on small screens */
+    }
+
+    tbody tr {
+        margin-bottom: 15px;
+    }
+
+    tbody td {
+        padding: 10px;
+        position: relative;
+        text-align: center;
+    }
+
+    tbody td:before {
+        content: attr(data-label); /* Use the `data-label` attribute for labels */
+        position: absolute;
+        left: 0;
+        top: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #E10600; /* F1 Red */
+    }
 }
+
 /* General style for the dropdown container */
 .section label {
     font-size: 18px;
@@ -1036,13 +1130,31 @@ tr:hover {
     pointer-events: none; /* Prevent click on icon */
 }
 /* Live Timings */
-
-#live-timings {
+#live-timings-section {
     padding: 65px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 1px;
     margin-top: 20px;
 }
+
+#race-select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #C0C0C0;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    background-color: #2C2C3A; /* Dark grey background */
+    color: #FFFFFF; /* White text */
+    cursor: pointer;
+    appearance: none; /* Removes default arrow styles */
+}
+
+#race-select:hover {
+    border-color: #E10600; /* F1 Red border on hover */
+}
+
 
 /* Driver standings */
 
@@ -1052,14 +1164,12 @@ tr:hover {
     border-radius: 8px;
     margin-top: 20px;
 }
-
 /* safety management */
 
 #safety-management {
     padding: 65px;
     text-align: center;
     border-radius: 8px;
-    margin-top: 20px;
 }
 
 

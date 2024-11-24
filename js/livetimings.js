@@ -1,7 +1,32 @@
-// Function to fetch live timings from the last race
-async function fetchLiveTimings() {
+// Function to populate the dropdown with Grand Prix options
+async function populateRaceDropdown() {
     try {
-        const response = await fetch('https://ergast.com/api/f1/current/last/results.json');
+        const response = await fetch('https://ergast.com/api/f1/current.json'); // Fetch current season data
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        const data = await response.json();
+
+        const races = data.MRData.RaceTable.Races;
+        const raceSelect = document.getElementById('race-select');
+
+        // Populate dropdown with race names and round numbers
+        races.forEach(race => {
+            const option = document.createElement('option');
+            option.value = race.round; // Use round number as value
+            option.textContent = `${race.raceName} (${race.date})`; // Display race name and date
+            raceSelect.appendChild(option);
+        });
+    } catch (error) {
+        console.error('Error fetching race list:', error);
+    }
+}
+
+// Function to fetch and display timings for the selected Grand Prix
+async function fetchSelectedRaceTimings() {
+    const round = document.getElementById('race-select').value; // Get selected round
+    if (!round) return;
+
+    try {
+        const response = await fetch(`https://ergast.com/api/f1/current/${round}/results.json`);
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
         const data = await response.json();
 
@@ -31,10 +56,12 @@ async function fetchLiveTimings() {
             liveTimings.appendChild(row);
         });
     } catch (error) {
-        console.error('Error fetching live timings:', error);
+        console.error('Error fetching race timings:', error);
         document.getElementById('live-timings').innerHTML = '<tr><td colspan="4">Error loading data</td></tr>';
     }
 }
 
-// Add event listener to load timings on page load
-document.addEventListener('DOMContentLoaded', fetchLiveTimings);
+// Initialize the dropdown and event listeners on page load
+document.addEventListener('DOMContentLoaded', () => {
+    populateRaceDropdown();
+});

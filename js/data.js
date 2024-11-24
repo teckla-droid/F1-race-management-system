@@ -358,7 +358,7 @@ const drivers = [
         team: "Red Bull Racing",
         country: "Netherlands",
         podiums: "111",
-        championships: "1",
+        championships: "4",
         birthdate: "30/09/1997"
         ,ergastLink: "https://ergast.com/api/f1/drivers/verstappen.json"
       }

@@ -10,11 +10,13 @@ async function fetchRaceSchedule() {
         const scheduleData = document.getElementById('schedule-data');
         scheduleData.innerHTML = `
             <table>
+            <thead>
                 <tr>
-                    <th>Race Name</th>
-                    <th>Date</th>
-                    <th>Circuit</th>
+                <th>Race Name</th>
+                <th>Date</th>
+                <th>Circuit</th>
                 </tr>
+            </thead>
                 ${races.map(race => `
                     <tr>
                         <td>${race.raceName}</td>
