@@ -994,7 +994,7 @@ table {
     width: 100%;
     border-collapse: collapse; /* Remove gaps between cells */
     margin: 20px 0;
-    background-color: #2C2C3A; /* F1 dark grey background */
+    background-color: #2C2C3A;
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Ensures borders stay rounded */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
