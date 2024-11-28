@@ -348,86 +348,6 @@ const drivers = [
         }
     },
     {
-        driver: {
-        name: "Max",
-        surname: "Verstappen",
-        number: "1"
-        },
-      photo: "../../../../../../assets/drivers/maxver01.png",
-      info: {
-        team: "Red Bull Racing",
-        country: "Netherlands",
-        podiums: "111",
-        championships: "4",
-        birthdate: "30/09/1997"
-        ,ergastLink: "https://ergast.com/api/f1/drivers/verstappen.json"
-      }
-    },
-    {
-      driver: {
-        name: "Charles",
-        surname: "Leclerc",
-        number: "16"
-      },
-      photo: "../../../../../../../../../../../../../../../assets/drivers/chalec01.png",
-      info: {
-        team: "Ferrari",
-        country: "Monaco",
-        podiums: "41",
-        championships: "None",
-        birthdate: "16/10/1997"
-        ,ergastLink: "http://ergast.com/api/f1/drivers/leclerc.json"
-      }
-    },
-    {
-      driver: {
-        name: "Fernando",
-        surname: "Alonso",
-        number: "14"
-      },
-      photo: "../../../../../../../assets/drivers/feralo01.png",
-      info: {
-        team: "Aston Martin",
-        country: "Spain",
-        podiums: "106",
-        championships: "2",
-        birthdate: "29/07/1981"
-        ,ergastLink: "https://ergast.com/api/f1/drivers/alonso.json"
-      }
-    },
-    {
-      driver: {
-        name: "Pierre",
-        surname: "Gasly",
-        number: "10"
-      },
-      photo: "../../../../../../../../../../../../../../../assets/drivers/piegas01.png",
-      info: {
-        team: "Alpine",
-        country: "France",
-        podiums: "5",
-        championships: "None",
-        birthdate: "07/02/1996"
-        ,ergastLink: "https://ergast.com/api/f1/drivers/gasly.json"
-      }
-    },
-    {
-      driver: {
-        name: "Valtteri",
-        surname: "Bottas",
-        number: "77"
-      },
-      photo: "../../../../../../../../../../../../../../../assets/drivers/valbot01.png",
-      info: {
-        team: "Kck Sauber",
-        country: "Finland",
-        podiums: "67",
-        championships: "None",
-        birthdate: "28/08/1989"
-        ,ergastLink: "https://ergast.com/api/f1/drivers/bottas.json"
-      }
-    },
-    {
       driver: {
         name: "George",
         surname: "Russell",
@@ -441,6 +361,22 @@ const drivers = [
         championships: "None",
         birthdate: "15/02/1998"
         ,ergastLink: "https://ergast.com/api/f1/drivers/russell.json"
+      }
+    },
+    {
+        driver: {
+        name: "Max",
+        surname: "Verstappen",
+        number: "1"
+        },
+      photo: "../../../../../../assets/drivers/maxver01.png",
+      info: {
+        team: "Red Bull Racing",
+        country: "Netherlands",
+        podiums: "111",
+        championships: "4",
+        birthdate: "30/09/1997"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/verstappen.json"
       }
     },
     {
@@ -461,6 +397,22 @@ const drivers = [
     },
     {
       driver: {
+        name: "Charles",
+        surname: "Leclerc",
+        number: "16"
+      },
+      photo: "../../../../../../../../../../../../../../../assets/drivers/chalec01.png",
+      info: {
+        team: "Ferrari",
+        country: "Monaco",
+        podiums: "41",
+        championships: "None",
+        birthdate: "16/10/1997"
+        ,ergastLink: "http://ergast.com/api/f1/drivers/leclerc.json"
+      }
+    },
+    {
+      driver: {
         name: "Carlos",
         surname: "Sainz",
         number: "55"
@@ -477,18 +429,50 @@ const drivers = [
     },
     {
       driver: {
-        name: "Lando",
-        surname: "Norris",
-        number: "4"
+        name: "Fernando",
+        surname: "Alonso",
+        number: "14"
       },
-      photo: "../../../../../../../../../../../../../../../assets/drivers/lannor01.png",
+      photo: "../../../../../../../assets/drivers/feralo01.png",
       info: {
-        team: "McLaren",
-        country: "United Kingdom",
-        podiums: "25",
+        team: "Aston Martin",
+        country: "Spain",
+        podiums: "106",
+        championships: "2",
+        birthdate: "29/07/1981"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/alonso.json"
+      }
+    },
+    {
+      driver: {
+        name: "Lance",
+        surname: "Stroll",
+        number: "18"
+      },
+      photo: "../../../../../../../../../../../../../../../assets/drivers/lanstr01.png",
+      info: {
+        team: "Aston Martin",
+        country: "Canada",
+        podiums: "3",
         championships: "None",
-        birthdate: "13/11/1999"
-        ,ergastLink: "https://ergast.com/api/f1/drivers/norris.json"
+        birthdate: "29/10/1998"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/stroll.json"
+      }
+    },
+    {
+      driver: {
+        name: "Pierre",
+        surname: "Gasly",
+        number: "10"
+      },
+      photo: "../../../../../../../../../../../../../../../assets/drivers/piegas01.png",
+      info: {
+        team: "Alpine",
+        country: "France",
+        podiums: "5",
+        championships: "None",
+        birthdate: "07/02/1996"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/gasly.json"
       }
     },
     {
@@ -509,50 +493,18 @@ const drivers = [
     },
     {
       driver: {
-        name: "Yuki",
-        surname: "Tsunoda",
-        number: "22"
+        name: "Valtteri",
+        surname: "Bottas",
+        number: "77"
       },
-      photo: "../../../../../../../../../../../../assets/drivers/yuktsu01.png",
+      photo: "../../../../../../../../../../../../../../../assets/drivers/valbot01.png",
       info: {
-        team: "RB",
-        country: "Japan",
-        podiums: "None",
+        team: "Kck Sauber",
+        country: "Finland",
+        podiums: "67",
         championships: "None",
-        birthdate: "11/05/2000"
-        ,ergastLink: "https://ergast.com/api/f1/drivers/tsunoda.json"
-      }
-    },
-    {
-      driver: {
-        name: "Lance",
-        surname: "Stroll",
-        number: "18"
-      },
-      photo: "../../../../../../../../../assets/drivers/lanstr01.png",
-      info: {
-        team: "Aston Martin",
-        country: "Canada",
-        podiums: "3",
-        championships: "None",
-        birthdate: "29/10/1998"
-        ,ergastLink: "https://ergast.com/api/f1/drivers/stroll.json"
-      }
-    },
-    {
-      driver: {
-        name: "Alexander",
-        surname: "Albon",
-        number: "23"
-      },
-      photo: "../../../../../../../../../../../../../../../assets/drivers/alealb01.png",
-      info: {
-        team: "Williams",
-        country: "Thailand",
-        podiums: "2",
-        championships: "None",
-        birthdate: "23/03/1996"
-        ,ergastLink: "https://ergast.com/api/f1/drivers/albon.json"
+        birthdate: "28/08/1989"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/bottas.json"
       }
     },
     {
@@ -573,6 +525,104 @@ const drivers = [
     },
     {
       driver: {
+        name: "Lando",
+        surname: "Norris",
+        number: "4"
+      },
+      photo: "../../../../../../../../../../../../../../../assets/drivers/lannor01.png",
+      info: {
+        team: "McLaren",
+        country: "United Kingdom",
+        podiums: "25",
+        championships: "None",
+        birthdate: "13/11/1999"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/norris.json"
+      }
+    },
+    {
+      driver: {
+          name: "Oscar",
+          surname: "Piastri",
+          number: "81"
+          },
+          photo: "../../../../../../../../../../../../assets/drivers/oscpia01.png",
+          info: {
+              team: "McLaren F1 Team",
+              country: "Australia",
+              podiums: "9",
+              championships: "None",
+              birthdate: "06/04/2001"
+              ,ergastLink: "https://ergast.com/api/f1/drivers/piastri.json"
+
+  }
+  },
+    {
+      driver: {
+        name: "Yuki",
+        surname: "Tsunoda",
+        number: "22"
+      },
+      photo: "../../../../../../../../../../../../assets/drivers/yuktsu01.png",
+      info: {
+        team: "RB",
+        country: "Japan",
+        podiums: "None",
+        championships: "None",
+        birthdate: "11/05/2000"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/tsunoda.json"
+      }
+    },
+    {
+      driver: {
+          name: "Liam ",
+          surname: "Lawson",
+          number: "30"
+          },
+          photo: "../../../../../../../../../../../../assets/drivers/lialaw01.png",
+          info: {
+              team: "RB",
+              country: "New Zealand",
+              podiums: "None",
+              championships: "None",
+              birthdate: "11/02/2002"
+              ,ergastLink: "https://ergast.com/api/f1/drivers/lawson.json"
+              }
+  },
+    {
+      driver: {
+          name: "Franco",
+          surname: "Colapinto",
+          number: "43"
+          },
+          photo: "../../../../../../../../../../../../assets/drivers/fracol01.png",
+          info: {
+              team: "Williams",
+              country: "Argentina",
+              podiums: "None",
+              championships: "None",
+              birthdate: "27/05/2003"
+              ,ergastLink: "https://ergast.com/api/f1/drivers/colapinto.json"
+              }
+  },
+    {
+      driver: {
+        name: "Alexander",
+        surname: "Albon",
+        number: "23"
+      },
+      photo: "../../../../../../../../../../../../../../../assets/drivers/alealb01.png",
+      info: {
+        team: "Williams",
+        country: "Thailand",
+        podiums: "2",
+        championships: "None",
+        birthdate: "23/03/1996"
+        ,ergastLink: "https://ergast.com/api/f1/drivers/albon.json"
+      }
+    },
+   
+    {
+      driver: {
         name: "Kevin",
         surname: "Magnussen",
         number: "20"
@@ -587,55 +637,9 @@ const drivers = [
         ,ergastLink: "https://ergast.com/api/f1/drivers/magnussen.json"
       }
     },
-    {
-        driver: {
-            name: "Oscar",
-            surname: "Piastri",
-            number: "81"
-            },
-            photo: "../../../../../../../../../../../../assets/drivers/oscpia01.png",
-            info: {
-                team: "McLaren F1 Team",
-                country: "Australia",
-                podiums: "9",
-                championships: "None",
-                birthdate: "06/04/2001"
-                ,ergastLink: "https://ergast.com/api/f1/drivers/piastri.json"
-
-    }
-    },
-    {
-        driver: {
-            name: "Franco",
-            surname: "Colapinto",
-            number: "43"
-            },
-            photo: "../../../../../../../../../../../../assets/drivers/fracol01.png",
-            info: {
-                team: "Williams",
-                country: "Argentina",
-                podiums: "None",
-                championships: "None",
-                birthdate: "27/05/2003"
-                ,ergastLink: "https://ergast.com/api/f1/drivers/colapinto.json"
-                }
-    },
-    {
-        driver: {
-            name: "Liam ",
-            surname: "Lawson",
-            number: "30"
-            },
-            photo: "../../../../../../../../../../../../assets/drivers/lialaw01.png",
-            info: {
-                team: "RB",
-                country: "New Zealand",
-                podiums: "None",
-                championships: "None",
-                birthdate: "11/02/2002"
-                ,ergastLink: "https://ergast.com/api/f1/drivers/lawson.json"
-                }
-    },
+    
+   
+    
     {
         driver: {
             name: "Ollie",
