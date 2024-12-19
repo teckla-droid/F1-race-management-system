@@ -16,19 +16,17 @@
     <select id="race-select" onchange="fetchSelectedRaceTimings()">
         <option value="" selected disabled>Choose a Grand Prix</option>
     </select>
+    <div id="live-timings-data"></div>
     <table>
         <thead>
             <tr>
                 <th>Position</th>
                 <th>Driver</th>
-                <th>Constructor</th>
                 <th>Time</th>
             </tr>
         </thead>
-        <tbody id="live-timings">
-            <!-- Live timings will be populated here -->
-        </tbody>
-    </table>
+        <tbody id="race-timings-table"></tbody
+        </table>
 </div>
 </body>
 </html>

@@ -361,3 +361,43 @@ window.onload = function () {
       event.target.classList.add(openIcon);
     }
   });
+  document.getElementById('signup-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+  
+    const username = document.getElementById('signup-username').value;
+    const password = document.getElementById('signup-password').value;
+  
+    const response = await fetch('http://localhost:5000/signup', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+    });
+  
+    const data = await response.json();
+    document.getElementById('response').innerText = data.message;
+  });
+  
+  document.getElementById('login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+  
+    const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+  
+    const response = await fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+    });
+  
+    const data = await response.json();
+    if (data.token) {
+        document.getElementById('response').innerText = `Login successful! Token: ${data.token}`;
+    } else {
+        document.getElementById('response').innerText = data.message;
+    }
+  });
+  

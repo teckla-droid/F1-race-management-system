@@ -341,7 +341,7 @@ const drivers = [
         info: {
         team: "Mercedes",
         country: "United Kingdom",
-        podiums: "201",
+        podiums: "202",
         championships: "7",
         birthdate: "07/01/1985"
         ,ergastLink: "https://ergast.com/api/f1/drivers/hamilton.json"
@@ -357,7 +357,7 @@ const drivers = [
       info: {
         team: "Mercedes",
         country: "United Kingdom",
-        podiums: "14",
+        podiums: "15",
         championships: "None",
         birthdate: "15/02/1998"
         ,ergastLink: "https://ergast.com/api/f1/drivers/russell.json"
@@ -373,7 +373,7 @@ const drivers = [
       info: {
         team: "Red Bull Racing",
         country: "Netherlands",
-        podiums: "111",
+        podiums: "112",
         championships: "4",
         birthdate: "30/09/1997"
         ,ergastLink: "https://ergast.com/api/f1/drivers/verstappen.json"
@@ -405,7 +405,7 @@ const drivers = [
       info: {
         team: "Ferrari",
         country: "Monaco",
-        podiums: "41",
+        podiums: "43",
         championships: "None",
         birthdate: "16/10/1997"
         ,ergastLink: "http://ergast.com/api/f1/drivers/leclerc.json"
@@ -421,7 +421,7 @@ const drivers = [
       info: {
         team: "Ferrari",
         country: "Spain",
-        podiums: "25",
+        podiums: "27",
         championships: "None",
         birthdate: "01/09/1994"
         ,ergastLink: "https://ergast.com/api/f1/drivers/sainz.json"
@@ -533,7 +533,7 @@ const drivers = [
       info: {
         team: "McLaren",
         country: "United Kingdom",
-        podiums: "25",
+        podiums: "26",
         championships: "None",
         birthdate: "13/11/1999"
         ,ergastLink: "https://ergast.com/api/f1/drivers/norris.json"
@@ -549,7 +549,7 @@ const drivers = [
           info: {
               team: "McLaren F1 Team",
               country: "Australia",
-              podiums: "9",
+              podiums: "10",
               championships: "None",
               birthdate: "06/04/2001"
               ,ergastLink: "https://ergast.com/api/f1/drivers/piastri.json"
@@ -744,7 +744,7 @@ const teams = [
         full_name: "McLaren F1 Team",
         chief: "Andrea Stella",
         debut: "1966",
-        championships: "8",
+        championships: "9",
         engine: "Mercedes",
         base: "Woking, United Kingdom"
       },

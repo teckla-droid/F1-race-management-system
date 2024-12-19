@@ -1,5 +1,3 @@
-// Fan Engagement Section - Allows Users to Post, Like, and Comment
-// Check if the user is already logged in when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     checkAuthStatus();
 });

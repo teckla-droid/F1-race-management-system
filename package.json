@@ -1,0 +1,17 @@
+{
+  "name": "formula-1-race-management-and-fan-engagement-system",
+  "version": "1.0.0",
+  "description": "The Formula 1 Race Management and Fan Engagement System is a web-based tool aimed at improving the fan experience by delivering real-time information on race schedules, driver rankings, and weather updates for race venues.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.8.4"
+  }
+}
