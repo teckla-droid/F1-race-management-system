@@ -3,14 +3,9 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
-      }
-    ],
-    "meta-charset-utf-8": "off",
-    "no-inline-styles": "off"
+    "axe/text-alternatives": "off",
+    "no-inline-styles": "off",
+    "meta-charset-utf-8": "off"
   },
   "browserslist": [
     "defaults",
